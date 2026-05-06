@@ -1,0 +1,1698 @@
+{
+  "productdetails": [
+    {
+    "navbar":[
+    {
+      
+  "id": 1,
+  "name": "Product 1",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842360/innovist_mq1ent.avif"
+
+
+},
+{
+      
+  "id": 2,
+  "name": "Product 2",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842328/bare_anatony_yahfkh.webp"
+
+
+},
+  
+ { 
+  "id": 3,
+  "name": "Product 3",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842345/chemist_zr552y.webp"
+},
+{ 
+  "id": 4,
+  "name": "Product 4",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842805/sun_shoop_xbbxsc.webp"
+}]},
+{
+"carousel":[
+{ 
+  "id": 5,
+  "name": "Product 5",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841738/bare3_rddttm.webp"
+},{ 
+  "id": 6,
+  "name": "Product 6",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841894/chemist2_ah16sn.webp"
+},
+{
+      
+  "id": 7,
+  "name": "Product 7",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841835/chemist_3_odpwug.webp"
+
+
+},
+{
+      
+  "id": 8,
+  "name": "Product 8",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842126/new_launches_4_t5oixt.webp"
+
+
+}]},
+{
+"bestsellers":[
+{
+      
+  "id": 9,
+  "name": "Product 9",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842111/new_launches3_atvcbr.webp"
+
+
+},{
+      
+  "id": 10,
+  "name": "Product 10",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776840836/bare_1_dfv6gf.webp"
+
+
+},{
+      
+  "id": 11,
+  "name": "Product 11",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841738/bare3_rddttm.webp"
+
+
+},{
+      
+  "id": 12,
+  "name": "Product 12",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841805/bare4_bhnkop.webp"
+
+
+}]},
+{
+"chemist":[
+{
+      
+  "id": 13,
+  "name": "Product 13",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841835/chemist_3_odpwug.webp"
+
+
+},
+
+{
+      
+  "id": 14,
+  "name": "Product 14",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841876/chemist1_kvogoy.webp"
+
+
+},
+{
+      
+  "id": 15,
+  "name": "Product 15",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841894/chemist2_ah16sn.webp"
+
+
+},
+{
+      
+  "id": 16,
+  "name": "Product 16",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776841925/chemist_4_d5d5gy.webp"
+
+
+}]},
+{
+"sunshoop":[
+{
+      
+  "id": 17,
+  "name": "Product 17",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842009/sun_scoop_1_tujx1x.webp"
+
+
+},
+{
+      
+  "id": 18,
+  "name": "Product 18",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842073/sun_scoop_tg70ki.webp"
+
+
+}]},
+{
+"vinci":[
+{
+      
+  "id": 19,
+  "name": "Product 19",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842158/vinci_catw5t.webp"
+ 
+
+}]},
+{
+"dandruff":[
+{
+      
+  "id": 20,
+  "name": "Product 20",
+  "image": "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1776842304/dandruff1_pmjq3d.webp"
+
+
+}]},
+{
+"cards":[
+{
+  "id":21,
+  "description":"Advanced Hair Growth Serum with Redensyl, Rosemary & Rice Water - 30 ml",
+   "button1":"Boosts Hair Growth",
+   "button2":"Reduces Hair Thinning",
+    "static":"Best Seller",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005199/1_copy_1_1080x1080_37460038-5290-4865-9801-407eb2b74844_xfy9tu.jpg",
+  "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453195/2_copy_1_1080x1080_a1520811-a821-47ac-8c7d-e86fa85b4f38_wpa1ke.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453222/3_copy_1_1080x1080_ba73a267-f332-4e95-bff5-dc49410e42d1_wfuz4u.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453251/9_copy_1080x1080_4b783240-1fa3-46c5-a129-db2e0c15f1b8_eei9az.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453257/6_copy_1080x1080_c85ceb88-bc73-4e8d-9c68-3d88e3ec7300_yfw5gv.jpg",
+  "rating":"4.81 | 1.3k Reviews",
+   "cost":"₹849.00",
+   "text":"MRP Inclusive of All Taxes.",
+   "activebutton":"Active Offers(3)",
+   "discount":"Get it for 565 with FLAT 35",
+ "pay": [
+"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  "id":22,
+ "description":"Rosemary & Rice Water Hair Growth Spray for Hair Growth & Thickness - 200 ml",
+   "button1":"Promotes Hair Growth",
+   "button2":"Hair Fall Control",
+    "static":"Best Seller",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005250/Rosemary_Hair_Spray_New_Catalog-07_ri2e7p.jpg",
+  "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453298/Rosemary_Hair_Spray_New_Catalog-01_scmfiq.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453320/Rosemary_Hair_Spray_New_Catalog-03_w1pwwt.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453342/Rosemary_Hair_Spray_New_Catalog-04_fobw6t.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453352/Rosemary_Hair_Spray_New_Catalog-05_oopmbk.jpg",
+   "rating":"4.77 |  986 Reviews",
+   "cost":"₹ 399.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹322 with FLAT20",
+"pay": [
+"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  "id":23,
+  "description":"Anti Dandruff Shampoo with Salicylic Acid & Biotin - 250 ml",
+   "button1":"Reduces Dandruff Up To 100%",
+   "button2":"Treats Itchy Scalp",
+    "static":"Best Seller",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005271/250_u8wbtz.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453395/3_95624ab5-0ee6-4160-a73d-1d0ffd8be3d4_sxbfwn.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453428/9_83bd7ef7-1ef4-40aa-8985-c54b074be4f1_phhohk.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453451/8_01409693-a516-450a-8bdc-0f5ddac5f883_we8e7c.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453513/10_c96c8df7-2e55-49da-8b81-d2b94a0fda92_p7nhrm.jpg",
+   "rating":"4.67 |  1.5K Reviews",
+   "cost":"₹484.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹391 with FLAT20",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":" Add to Cart"
+  
+},
+{
+  "id":24,
+  "description":"Exfoliating Body Wash with Lactic Acid & Salicylic Acid - 236 ml",
+   "button1":"Fades Tan",
+   "button2":"Removes Dead Skin",
+   "button3":"Treats Bumpy Skin",
+    "static":"Best Seller",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005294/First_Image_Guides_copy_2_3x_1879e414-8ce5-4d69-b04d-a8038a5b519b_1_1_ptjibs.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453572/2_236_3x_066f0731-d201-44b2-b374-5bb40288f7a8_2_1_ini5un.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453599/3_236_3x_90f64096-482d-4084-9df4-66537d9ac99e_1_utxt9f.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453605/HPS_SS_bcde1bfc-c825-4667-8dcb-f0ebc211ddf2_gqtn3r.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453633/6_236_3x_cf3ba58c-d11c-459b-9022-e514f335af78_1_olein6.jpg",
+   "rating":"4.67 |  3.0K Reviews",
+   "cost":"₹399.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹322 with FLAT20",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":" Add to Cart"
+  
+},
+{
+  "id":25,
+  "description":"5% AHA Underarm Roll on for Odour Control & Pigmentation (Aqua) - 40 ml",
+   "button1":"Reduces 99.99% Odour Causing Germs",
+   "button2":"Treats Pigmentation",
+   "button3":"No Alcohol",
+     
+    "static":"Aqua",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005314/Underarm_Roll_On_-_Aqua_40_ml_wkifvv.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453750/Artboard_1_75_cezyrn.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453769/Claim_Card_nfgkpi.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453787/CAP---White-Bg-1st-ImageHPS-_-SS-copy-3_iflxir.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453792/4_option2_3x_dd25961c-2f4d-4cc1-a89c-836948cd5acc_hmchse.jpg",
+   "rating":"4.74 |  11.6K Reviews",
+   "cost":"₹399.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹322 with FLAT20",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":" Add to Cart"
+  
+},
+{
+  "id":26,
+  "description":"Anti-Hair Fall Shampoo with Adenosine & Peptides | 5X Hairfall Control- 250 ml",
+   "button1":"Gives 5X Hair Fall Control",
+   "button2":"Nourishes the Roots",
+    "static":"Best Seller",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005350/2_10_5f894ef5-3394-4ccb-adfa-947c9cbf9c9d_ftqz58.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453888/4_1_1_kgns2n.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453894/9_4_fi2uet.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454349/10_4_hvp1hg.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453930/3_7_50137491-22c8-42a1-90b6-5fc84d8f9706_c1xnwu.jpg",
+   "rating":"4.71 |  889 Reviews",
+   "cost":"₹484.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹391 with FLAT20",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":" Add to Cart"
+  
+},
+{
+  "id":27,
+  "description":"2% Salicylic Acid Face Wash for Acne & Oil Control - 100 ml",
+   "button1":"Removes Excess Oil & Dirt",
+   "button2":"Reduces Acne",
+   "button3":"Fades Acne Marks",
+    "static":"Best Seller",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005371/1000122065_z4fk3a.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454363/2_236_1_yjeoeo.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454399/4_236_1_ddlgxc.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454577/Artboard_1_72_11bc7c6f-c5eb-4fd4-9d43-376f47d7e767_zvj5ay.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454464/6_236_2_eldlqe.jpg",
+   "rating":"4.84 |  539 Reviews",
+   "cost":"₹269.00 ",
+   "count":"₹299.00",
+   "c":"10%Off",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹217 with FLAT20",
+"pay": [
+"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  "id":28,
+  "description":"Hydrating Fluid Sunscreen for Face & Body | SPF 60 PA++++| In-Vivo Tested - 125ml",
+   "button1":"No White Cast",
+   "button2":"In-Vivo Tested",
+   "button3":"Non-Greasy Formula",
+    "static":"Best Seller",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005387/HydratingFluidSunscreen_FirstImage_f365288b-45f7-4b59-a7de-a0795e620fc9_galnqe.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454520/HydratingFluidSunscreen_F2_dcead049-4382-49a8-884e-5b957a280e21_wbyyes.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454486/HydratingFluidSunscreen_F5_bd2e3307-8040-48aa-8d65-f6e74cf131b3_obypyo.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454552/HydratingFluidSunscreen_F4_eb4f6ce4-93ac-432f-b59b-a5cdb237b0bd_udpcxk.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454546/HydratingFluidSunscreen_F6_e8c62400-1910-4d30-b0eb-6546c054ae16_g1cfle.jpg",
+
+   "rating":"4.67 |  888 Reviews",
+   "cost":"₹324.00",
+   "count":"₹499.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹175",
+"pay": [
+"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":" Add to Cart"
+  
+},
+{
+  "id":29,
+  "description":"Ultra Smoothing Hair Mask with Shea Butter & Niacinamide for Frizzy Hair - 250 gm",
+   "button1":"Restores Smoothness & Texture by 27%",
+   "button2":"Deeply Nourishes Lengths",
+   "button3":"Supports Healthy Shine",
+     "static":"Best Seller",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777005435/US_Mask_t5rgh1.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454626/04_b306e5d7-0b04-474b-8e66-02ff23a255af_sp0qmk.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454642/06_b2f90bbf-9391-474d-bf70-f0371c72c16d_gf8gu4.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454647/05_82df3514-8bd7-42b5-a6ad-89fe90723398_cfdujk.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454665/US_Mask_adb50425-9593-41e6-9524-e867eb351bee_rpa7m6.jpg",
+   "rating":"4.76 |  251 Reviews",
+   "cost":"₹596.00",
+   "count":"₹745.00",
+    "c":"20%Off",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹453 with FLAT25",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+}]},
+{
+"cards1":[
+{
+  
+  "id":30,
+  "description":"Anti-Dandruff Shampoo (250 ml) & Conditioner (175 gm) Combo with Salicylic Acid & Rosemary",
+   "button1":"Reduces Dandruff Up To 100%",
+   "button2":"Treats Itchy Scalp",
+   "button3":"Controls Excess Oil",
+   "static":"Selling Fast",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291169/1_2_4d01cb37-aa1e-428b-b3ed-8c0a72fef08b_fjtuwp.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454811/2_2_a838e911-e37c-44af-abc3-1dd766c9b3f1_qjvkak.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454824/3_2_aa49c07f-9a3d-410e-b5f1-fddc82e09021_soggql.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454866/5_2_fa4567e5-a978-46ce-b7db-b6048ddff2f8_bdot0m.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454860/8_1_3c6d10bb-9a75-4b34-9f26-d40b303e06b7_wbpky1.jpg",
+   "rating":"4.58 |  136 Reviews",
+   "cost":"₹849.00",
+   "count":"₹994.00",
+    "c":"15%Off",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹565 with FLAT35",
+"pay": [
+"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+
+},
+{
+  
+  "id":31,
+  "description":"Anti-Hair Fall Shampoo (250 ml) & Conditioner (175 gm) Combo with Redensyl & Rosemary",
+   "button1":"Reduces Breakage",
+   "button2":"Strengthens Hair",
+   "button3":"Enhances Smoothness",
+   "static":"Selling Fast",
+   "c":"15%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291179/2_7_f39bb4fe-6055-4bb6-93df-3b8124cb533f_ie0v9f.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454893/3_7_215e5dfd-8b26-43fb-a6f5-45609e025b65_t4qy6p.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454902/3_7_215e5dfd-8b26-43fb-a6f5-45609e025b65_1_dumtgx.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454917/6_1_3cf48937-5ffa-442e-a839-49abddb1c064_1_ctukxp.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454924/7_3_96d1c9da-7914-4d1c-b89c-58df48dcc096_einocq.jpg",
+   "rating":"4.63 |  133 Reviews",
+   "cost":"₹849.00",
+   "count":"₹994.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹565 with FLAT35",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  
+  "id":32,
+  "description":"Exfoliating Body Wash with Lactic Acid & Salicylic Acid - 236 ml | Pack of 2",
+   "button1":"Removes Dead Skin",
+   "button2":"Unclogs pores",
+   "button3":"Treats Bumpy Skin",
+   "static":"Best Seller",
+  "c":"15%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291200/EX_BW_pack_2_wzke0h.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453572/2_236_3x_066f0731-d201-44b2-b374-5bb40288f7a8_2_1_ini5un.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453599/3_236_3x_90f64096-482d-4084-9df4-66537d9ac99e_1_utxt9f.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453633/6_236_3x_cf3ba58c-d11c-459b-9022-e514f335af78_1_olein6.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453605/HPS_SS_bcde1bfc-c825-4667-8dcb-f0ebc211ddf2_gqtn3r.jpg",
+   "rating":"4.67 |  3.0K Reviews",
+   "cost":"₹678.00",
+   "count":"₹798.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹515 with FLAT25",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png,https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  
+  "id":33,
+  "description":"Rosemary & Rice Water Hair Growth Spray - 200 ml | Pack of 2",
+   "button1":"Promotes Hair Growth",
+   "button2":"Hair Fall Control",
+   "static":"Trending",
+    "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291211/Hair_Spray_2_combo_ufym6e.jpg",
+     "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454988/3_fc9202e7-110a-41f1-8169-7f5b9e5205f5_mnyxmt.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455023/4_b3361c0d-1a7d-4264-a813-4b3d513bf138_znr4tq.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455061/7_1_83423482-4f5f-4198-a04c-ea946ad1b73c_vuckvf.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455112/6_53817e79-8127-4e84-b9cf-4d150a88cb3d_jqn2sv.jpg",
+   "rating":"4.91 |  530 Reviews",
+   "cost":"₹700.00",
+   "count":"₹798.00",
+   "c":"12%Off",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹532 with FLAT25",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  
+  "id":34,
+  "description":"Anti-Dandruff Shampoo (250 ml) & Exfoliating Body Wash (236 ml) Combo",
+   "button1":"Reduces Dandruff",
+   "button2":"Treats Itchy Scalp",
+   "button3":"Smoothens Skin",
+   "static":"Proven Results",
+   "c":"10%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291217/2_1_defbd98e-fed3-464d-b62a-1a96b496321d_zmucvb.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455117/3_2_44852b33-956f-4c58-9488-125a5cace8ac_mozghu.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455137/4_2_b48af94e-8d28-4834-a36e-c15fd7f62499_b4lnst.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455148/5_2_8ed4d901-37d1-4fd2-8764-03ecce5ded52_bweomv.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455160/6_4_79e42b0f-1696-4721-80ad-166f33fc1c9f_wguk0i.jpg",
+   "rating":"4.62 |  26 Reviews",
+   "cost":"₹849.00",
+   "count":"₹944.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹565 with FLAT35",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  
+  "id":35,
+  "description":"Hair Growth Serum (30 ml) & Anti-Dandruff Shampoo (250 ml) Combo",
+   "button1":"214% Hair Growth in Just 10 Days",
+   "button2":"Dandruff Control",
+    "static":"Proven Results",
+    "c":"10%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291241/Hair_Growth_Serum_Anti-Dandruff_Shampoo_Combo_2d1ce3c2-f8a3-46da-9781-d9c0fe1d6770_1_y8h8ke.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455207/Artboard6_2dfb2241-bffe-4385-8b1b-4d43590b92c7_pjmg1d.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455219/Artboard9_9bf9ad78-ee9b-4f28-ac6c-29d120314aa2_w09qju.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455234/Artboard5_aade6228-0718-4e4e-b8f4-1b7eac974b00_alroye.png",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455295/Artboard7_978aa82a-972c-41ab-940a-42747c441c63_jsoacg.png",
+   "rating":"4.61 |  84 Reviews",
+   "cost":"₹1,255.00",
+   "count":"₹1,394.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹835 with FLAT35",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  
+  "id":36,
+  "description":"Ultimate Hair Growth Combo (Rosemary & Rice Water Spray - 200 ml | Rosemary Oil - 100 ml)",
+   "button1":"Promotes Hair Growth",
+   "button2":"Hair Fall Control",
+     "static":"Proven Results",
+   "c":"10%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291261/Artboard_2_3_db23caa6-cdff-4e7f-b07e-193bf53880cc_blrk1v.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454988/3_fc9202e7-110a-41f1-8169-7f5b9e5205f5_mnyxmt.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455112/6_53817e79-8127-4e84-b9cf-4d150a88cb3d_jqn2sv.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455309/WhatsApp_Image_2025-01-13_at_12.15.51_PM_q3k1ok.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777455321/WhatsApp_Image_2025-01-13_at_12.15.50_PM_nnchff.jpg",
+   "rating":"4.65 |  37 Reviews",
+   "cost":"₹598.00",
+   "count":"₹698.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹454 with FLAT25",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  
+  "id":37,
+  "description":"Detan Duo (Exfoliating Body Wash - 236 ml + Gentle Exfoliating Face Scrub - 100 ml)",
+   "button1":"Promotes Instant Glow",
+   "button2":"Gently Exfoliates",
+   
+    "static":"New Launch",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291337/Artboard_1_c700b20c-79b3-4fd6-b3ec-678e07aeea8b_rwjer2.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456422/Artboard_2_9869b554-d376-4ae1-904b-1748112ec027_f4kqxg.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456437/Artboard_5_05565eca-4e86-46a4-bbc5-8a3b7b228ed1_w1lu8f.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456426/Artboard_4_732082b0-a270-4fba-a192-219da5a440fb_nf7or5.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456462/Artboard_7_ol5xjq.jpg",
+   "rating":"4.8 |  180 Reviews",
+   "cost":"₹673.00",
+   "count":"₹748.00",
+   "c":"10%Off",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹511 with FLAT25",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  
+  "id":38,
+  "description":"Daily Exfoliation Trio (Aqua & Fragrance Free Underarm Roll On - 40ml + 40ml | Exfoliating Body Wash - 236 ml)",
+   "button1":"Gently Exfoliates",
+   "button2":"Removes Dead Skin",
+    "button3":"Treats Bumpy Skin",
+      
+    "static":"New Launch",
+    "c":"13%Off",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777291342/1_898d2b80-39f1-41bd-b2aa-50ad5a641223_xey1ho.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456426/Artboard_4_732082b0-a270-4fba-a192-219da5a440fb_nf7or5.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456487/3_07241cd5-2f74-4501-9c88-df2580ec71fe_pbaw1c.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456582/Daily_Exfoliating_Trio_qrbadq.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777460308/2_5d16f565-eae3-4736-99ed-4a1925d5a9a3_wvxee8.jpg",
+   "rating":"4.7 |  3.6K Reviews",
+   "cost":"₹1,041.00",
+   "count":"₹1,197.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹692 with FLAT35",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+}
+
+
+
+
+
+
+
+]},
+{
+"cards2":[
+{
+    "id":39,
+  "description":"Exfoliating Body Wash with Lactic Acid & Salicylic Acid - 236 ml",
+   "button1":"Fades Tan",
+   "button2":"Removes Dead Skin",
+    "button3":"Treats Bumpy Skin",
+      
+    "static":"Best Seller",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350300/First_Image_Guides_copy_2_3x_1879e414-8ce5-4d69-b04d-a8038a5b519b_1_1_mzcmo9.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453572/2_236_3x_066f0731-d201-44b2-b374-5bb40288f7a8_2_1_ini5un.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453599/3_236_3x_90f64096-482d-4084-9df4-66537d9ac99e_1_utxt9f.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453633/6_236_3x_cf3ba58c-d11c-459b-9022-e514f335af78_1_olein6.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777453605/HPS_SS_bcde1bfc-c825-4667-8dcb-f0ebc211ddf2_gqtn3r.jpg",
+
+   "rating":"4.67 |  3.0K Reviews",
+   "cost":"₹399.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹322 with FLAT20",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":40,
+  "description":"3% Niacinamide Featherlight Fluid Sunscreen| SPF 50+ PA++++| In-Vivo Tested - 45ml",
+   "button1":"No White Cast",
+   "button2":"In-Vivo Tested",
+    "button3":"Reduces Pigmentation",
+      "c":"35%Off", 
+    "static":"Best Seller",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350319/3_Niacinamide_First_imagejpg_h9fzak.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456642/3_Niacinamide_F4_saxrgv.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456652/3_Niacinamide_F5_te3jab.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456656/3_Niacinamide_F6_s1ybfs.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456673/3_Niacinamide_F7_u7oqih.jpg",
+
+   "rating":"4.64 |  122 Reviews",
+   "cost":"₹291.00",
+   "count":"₹449.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹158",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":41,
+  "description":"Gentle Exfoliating Face Scrub for Clear & Glowing Skin - 100 ml",
+   "button1":"Gently Exfoliates",
+   "button2":"Removes Tanning",
+    "button3":"Removes Blackheads",
+       "c":"23%Off",
+    "static":"Best Seller",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350323/Gentle_Exfoliating_Face_Scrub_pnx1au.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456785/Artboard_4_4_c3f4c0cf-1616-486b-8f31-254e85896bc9_nv6wd5.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456754/Artboard_2_5_19a2b2b0-3209-4ecd-8de1-2f3a7558bbff_duzwmb.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456759/Artboard_3_4_24ed62c0-2ae7-47e8-9de1-b4499ec2103b_c7fxrw.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456790/Face_scrub_before_after_ek2thv.jpg",
+
+   "rating":"4.9 |  821 Reviews",
+   "cost":"₹269.00",
+   "count":"₹349.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹217 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":42,
+  "description":"Gentle & Hydrating Face Cleanser - 100 ml",
+   "button1":"Replenish Skin Hydration",
+   "button2":"Protect Skin Barrier",
+    "button3":"Moisturises Skin",
+    
+   "c":"12%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350339/2_236-1_xunepo.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456807/2_236-1_1_amwpls.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456882/3_236_2_qe0rbx.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456863/CAP---White-Bg-1st-ImageHPS-_-SS-copy-20_hhinfb.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456858/4_236_2_igygdn.jpg",
+   "rating":"4.76 |  78 Reviews",
+   "cost":"₹263.00",
+   "count":"₹299.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹212 with FLAT20",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":43,
+  "description":"Glycolic Acid Face Toner for Gentle Exfoliation & Skin Hydration - 150 ml",
+   "button1":"Exfoliates skin",
+   "button2":"Unclog pores",
+    "button3":"Hydrates skin",
+   "c":"10%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350349/First-images-guidelinestoner_46140800-b4a6-4dcd-818a-e20e157fee66_usu7pl.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456905/CAP---Toner-CatalogArtboard-5_awsjaw.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456914/CAP---Toner-CatalogArtboard-4_1_wjbomn.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456923/Artboard_6_1_d0eb704e-9e98-416a-9e19-96b38cb2962f_widog6.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456935/CAP---Toner-CatalogArtboard-7_yexz9h.jpg",
+
+   "rating":"4.83 |  124 Reviews",
+   "cost":"₹404.00",
+   "count":"₹449.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹326 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":44,
+  "description":"2% Salicylic Acid Face Wash for Acne & Oil Control - 100 ml",
+   "button1":"Removes Excess Oil & Dirt",
+   "button2":"Reduces Acne",
+    "button3":"Fades Acne Marks",
+      
+    "static":"Best Seller",
+   "c":"10%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350357/1000122065_ubccu0.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454363/2_236_1_yjeoeo.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454399/4_236_1_ddlgxc.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454577/Artboard_1_72_11bc7c6f-c5eb-4fd4-9d43-376f47d7e767_zvj5ay.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777454464/6_236_2_eldlqe.jpg",
+   "rating":"4.84 |  543 Reviews",
+   "cost":"₹269.00",
+   "count":"₹299.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹217 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":45,
+  "description":"Exfoliating Body Scrub with Coffee & Brown Sugar - 75 gm",
+   "button1":"Exfoliates Dead Skin",
+   "button2":"Fades Tan",
+    "button3":"Reduces Clogged Pores",
+    "c":"15%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350374/BODY_SCRUB_WEBSITE_dszpej.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456972/3_2_dbb2be82-d7c2-4a00-9521-ff016b813c44_d1bolw.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456977/4_2_973ed1fb-f675-417c-915d-37f6be8f53dd_amopht.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456996/5_1_bbd00282-b16d-4503-838d-093cc6544e0e_rrz9oz.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457014/Our_Promise_vug42g.jpg",
+   "rating":"4.67 |  158 Reviews",
+   "cost":"₹297.00",
+   "count":"₹349.000",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹240 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":46,
+  "description":"Daily Hydrating Body Lotion with Hyaluronic Acid - 200 ml",
+   "button1":"Intense skin hydration",
+   "button2":"Even skin tone",
+   "c":"8%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350395/2_236_549600c5-201b-475e-8b13-ca1d9456dbd9_qqpofd.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456807/2_236-1_1_amwpls.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457137/3_236_1bcb05ae-b12e-4ef6-b034-8646106cc1e1_ukfuan.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456858/4_236_2_igygdn.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456863/CAP---White-Bg-1st-ImageHPS-_-SS-copy-20_hhinfb.jpg",
+   "rating":"4.8 |  69 Reviews",
+   "cost":"₹275.00",
+   "count":"₹299.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹222 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":47,
+  "description":"Hydrating Body Wash with Hyaluronic Acid & Coconut Oil - 236 ml",
+   "button1":"Hydrates & Moisturises",
+   "button2":"Boosts Elasticity Of Skin",
+   "c":"15%Off",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777350400/2_236_3cb983f8-3e78-4ee9-94d9-96d008c0d4a5_vzesll.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457149/4_236_85e271b7-ddfb-4653-81ea-25095c7b2247_rtepul.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456858/4_236_2_igygdn.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457245/2_236_3cb983f8-3e78-4ee9-94d9-96d008c0d4a5_1_gamgnx.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777456863/CAP---White-Bg-1st-ImageHPS-_-SS-copy-20_hhinfb.jpg",
+   "rating":"4.83 |  66 Reviews",
+   "cost":"₹297.00",
+   "count":"₹349.00",
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹240 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+}
+]},
+{
+"cards3":[
+
+{
+    "id":48,
+  "description":"Fenugreek & Curry Leaves Hair Strengthening Spray - 200 ml",
+   "button1":"Strengthens Hair",
+   "button2":"Reduces Breakage",
+    
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353017/1_4_3d9e6fa7-daa3-4c52-9964-2a9ca00fefb1_kgwdf0.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457289/2_9_b7cb8ef4-c4c2-46e5-992f-380d70a6d207_mzy6hr.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457303/3_6_3135b351-c086-40ee-b578-402c1b74a922_jhcyzh.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457327/7_4_lhdhqw.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457332/4_8_53f0326e-aa97-4687-9e1e-eedbf534fb3d_wepl1a.jpg",
+   "rating":"4.75 |  8 Reviews",
+   "cost":"₹399.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹322 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":49,
+  "description":"Epsom Salt Body Wash with Lavender Oil & Aloe Vera - 236 ml",
+   "button1":"Relaxes muscle stiffness",
+   "button2":"Eases post-workout soreness",
+    "button3":"Calms & soothes skin",
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353042/1_3_ca788422-bb47-46e7-a905-83070961d201_fymzho.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457366/1_3_ca788422-bb47-46e7-a905-83070961d201_xzifwz.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457378/2_8_b561a97c-ffad-45ab-adee-93cf5727cb93_vkh0cg.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457383/3_5_d03bfb0b-2ad6-4130-ab5b-a4ea9403291d_l6udcw.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457417/4_7_97f85721-e876-4ece-92c6-29f862dd841f_afm1r8.jpg",
+   "rating":"4.57 |  7 Reviews",
+   "cost":"₹449.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹363 with FLAT20",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":50,
+  "description":"Oil Control Face Moisturizer with Niacinamide & Vitamin B5 - 100 gm",
+   "button1":"Controls Excess Oil & Sebum",
+   "button2":"Lightweight, Matte & Non-Greasy",
+    "button3":"Reduces Clogged Pores",
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353050/OilControlFaceMoisturizerF1_cfv4ut.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457429/OilControlFaceMoisturizerF2_dslp71.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457439/OilControlFaceMoisturizerF3_a1p6ki.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457547/OilControlFaceMoisturizerF4_ouvkoo.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457560/OilControlFaceMoisturizerNYKAA_FLIPKART-OilControlFaceMoisturizer_5_Niacinamide_mwaonh.jpg",
+   "rating":"4.75 |  12 Reviews",
+   "cost":"₹449.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹363 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":51,
+  "description":"0.1% Retinol Night Cream for Fine Lines & Wrinkles - 30 gm",
+   "button1":"Reduces Fine Lines, Wrinkles & Sunspots",
+   "button2":"Boosts Collagen for Youthful Skin",
+    "button3":"Beginner- Friendly",
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353081/RetinolCatalogueF_1_qbjpfs.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457489/RetinolCatalogueF_2_d9k8zt.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457502/RetinolCatalogueF_3_nmovgz.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457516/RetinolCatalogueF_5_hlzlys.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457526/RetinolCatalogueF_7_e8e8fl.jpg",
+   "rating":"4.78 |  9 Reviews",
+   "cost":"₹449.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹363 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":52,
+  "description":"Instant Hair Cover-Up Powder (Brown Color) - 4 gm",
+   "button1":"100% Grey Coverage in a Single Application",
+   "button2":"Seamless Natural Finish",
+    "button3":"Non-Drying Formula",
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353089/Artboard1_76_slxsn8.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457570/Artboard2_73_oz6vzn.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457578/Artboard3_27_vtme8c.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457582/Artboard4_25_qnrar3.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457606/Artboard9_2_kz3cwh.jpg",
+   "rating":"4.6 |  5 Reviews",
+   "cost":"₹674.00",
+   "count":"₹749.00",
+   "c":"10%Off",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹512 with FLAT25",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":53,
+  "description":"1.5% Hyaluronic Acid Intensely Hydrating Face Serum with Ceramides - 30 ml",
+   "button1":"Hydrates Intensely",
+   "button2":"Boosts Firmness",
+    "button3":"Strengthens Skin Barrier",
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353095/HASerumCatalouge_F1_d8gjdy.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457696/HASerumCatalouge_F2_g3ieqv.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457673/HASerumCatalouge_F5_fs0mx1.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457731/HASerumCatalouge_F7_cxxx08.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457746/HASerumCatalouge_F6_rbmr1o.jpg",
+   "rating":"4.62 |  8 Reviews",
+   "cost":"₹599.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹455 with FLAT25",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":54,
+  "description":"Advanced Anti Dandruff Serum with Salicylic Acid & Pentavitin - 50 ml",
+   "button1":"Reduces Visible Flakes From the 1st Use",
+   "button2":"Lightweight & Non-Sticky",
+    
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353102/Slide1_1_gvmpyn.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457756/Slide2_2_lexzuj.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457767/Slide3_2_lbf2dz.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457772/Slide9.2_pt3jpl.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457792/Slide10_ldzyxo.jpg",
+   "rating":"4.73 |  11 Reviews",
+   "cost":"₹549.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹417 with FLAT25",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":55,
+  "description":"Foot Roll-on for Cracked Heels & Diabetic Foot - 50 gm",
+   "button1":"Repairs & Heals Cracked Heels",
+   "button2":"Gives up to 24-Hours Moisturization",
+    "button3":"Safe for Diabetic Foot",
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353110/Firstimagewithtexture_sreiaf.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457821/2_8_00e2af00-fd1c-43ef-9ddf-a1caf73f0ef3_bqhlqc.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457830/4_7_64c81b76-2564-43ea-943c-b2f79849f388_sou0vl.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457843/8_3_w4qkge.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457847/6_6_e0b69319-f403-443c-bf4d-f0b36d448ffd_ig7ctf.jpg",
+   "rating":"4.63 |  19 Reviews",
+   "cost":"₹399.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹322 with FLAT20",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":56,
+  "description":"10% Magnesium Body Lotion with Lavender Oil & Aloe Vera - 236 ml",
+   "button1":"Relaxes muscles & aids recovery",
+   "button2":"Promotes Deep Relaxation for Better Sleep",
+    "button3":"Hydrates & Nourishes Skin",
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777353114/Artboard2_69_lx5odo.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457866/Artboard3_24_ktgxhe.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457874/Artboard4copy_vd4phv.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457879/Artboard6_3_szfutf.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457918/Artboard8_2_itp6hb.jpg",
+   "rating":"4.71 |  7 Reviews",
+   "cost":"₹549.00",
+   
+    "activebutton":"Active Offers(3)",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Get it for ₹417 with FLAT25",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+}
+]},
+{
+"cards4":[
+
+{
+    "id":57,
+  "description":"Ginger Lime Hand Cleanser - 200 ml",
+   "button1":"Cleanses",
+   "button2":"Exfoliates",
+   "button3":"Hydrates",
+  "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777365934/1_6_44115f80-839a-456b-821b-0417ee6b7f35_ltla4w.jpg",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457933/Artboard_3_10_7a5b647d-d4aa-4320-a527-701b41b9f491_eshtwk.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457942/Artboard_4_12_xsrepy.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457964/Artboard_5_10_oiexiv.jpg",
+
+   "rating":"4.6 |  5 Reviews",
+   "cost":"₹539.00",
+   "count":"₹599.00",
+   "c":"10%Off",
+
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹60",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":58,
+  "description":"Bergamot Geranium Hand Cleanser - 200 ml",
+   "button1":"Cleanses",
+   "button2":"Exfoliates",
+   "button3":"Hydrates",
+    
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777365938/1_7_6ba0ed5d-bd2b-4d4b-969b-cd1b3aeb6e5b_ev5syf.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457933/Artboard_3_10_7a5b647d-d4aa-4320-a527-701b41b9f491_eshtwk.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457942/Artboard_4_12_xsrepy.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457964/Artboard_5_10_oiexiv.jpg",
+   "rating":"5.0 |  32 Reviews",
+   "cost":"₹539.00",
+    "count":"₹599.00",
+   "c":"10%Off",
+
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹60",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":59,
+   "description":"Bergamot Geranium Body Crème - 200 gm",
+   "button1":"Softens",
+   "button2":"Moisturises",
+   "button3":"Nourishes",
+    
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777365996/1_5_356fe496-077d-4b38-b92b-794b29bbef0e_tapyvo.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457976/Artboard_3_3_9c18ce08-dcf7-41f0-951a-bb7911c27671_e3cfpc.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458188/Artboard_4_13_dcczqw.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457964/Artboard_5_10_oiexiv.jpg",
+   "rating":"4.95 |  21 Reviews",
+   "cost":"₹539.00",
+    "count":"₹599.00",
+   "c":"10%Off",
+
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹60",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+  
+},
+{
+    "id":60,
+  "description":"Bergamot Geranium Hand Crème - 200 gm",
+   "button1":"Softens",
+   "button2":"Moisturises",
+   "button3":"Nourishes",
+    
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777366221/1_4_ab5f706e-f1ca-4d59-8910-cf1d1ca89842_jmloeg.jpg",
+  "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457976/Artboard_3_3_9c18ce08-dcf7-41f0-951a-bb7911c27671_e3cfpc.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458219/Artboard_4_10_mkeeds.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457964/Artboard_5_10_oiexiv.jpg",
+   "rating":"4.84 |  77 Reviews",
+   "cost":"₹539.00",
+    "count":"₹599.00",
+   "c":"10%Off",
+  
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹60",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+  
+},
+{
+    "id":61,
+   "description":"Ginger Lime Hand Crème - 200 gm",
+   "button1":"Softens",
+   "button2":"Moisturises",
+   "button3":"Nourishes",
+    
+      
+    "static":"New Launch",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777366227/1_3_289df7c2-ad9e-4fe6-be09-0cd45b544223_g4z1yt.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777462112/Artboard_2_40_cfwwbm.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777462161/Artboard_3_8_4f809335-218c-4147-a69c-54c7f734f5d4_tummqv.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458219/Artboard_4_10_mkeeds.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457964/Artboard_5_10_oiexiv.jpg",
+   "rating":"4.67 |  6 Reviews",
+   "cost":"₹539.00",
+    "count":"₹599.00",
+   "c":"10%Off",
+  
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹60",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+  "id":"62",
+  "description":"Frankincense Patchouli Hair Conditioner - 50 ml",
+   "button1":"Smoothens",
+   "button2":"Hydrates",
+   "button3":"Nourishes",
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777366013/conditioner3_be07b43c-31a5-43f4-8a37-b124dcefbda1_bsxg31.jpg",
+ "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458034/Artboard_1_54_nk52t3.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458038/Artboard_2_54_vao4zk.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458077/Artboard_3_22_e55aec.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457964/Artboard_5_10_oiexiv.jpg",
+   "rating":"4.57 |  7 Reviews",
+   "cost":"₹359.00",
+    "count":"₹399.00",
+   "c":"10%Off",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹40",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":63,
+   "description":"Frankincense Patchouli Hair Cleanser - 90 ml",
+   "button1":"Cleanses",
+   "button2":"Smoothens",
+   "button3":"Hydrates",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777366024/fp-hair-cleanser_g0qbxv.jpg",
+  "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458146/Artboard_4_23_szqkql.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458120/Artboard_2_53_jed6j1.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458077/Artboard_3_22_e55aec.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457964/Artboard_5_10_oiexiv.jpg",
+   "rating":"4.6 |  5 Reviews",
+   "cost":"₹355.00",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹0",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+},
+{
+    "id":64,
+  "description":"Ginger Lime Body Crème - 50 gm",
+   "button1":"Softens",
+   "button2":"Moisturises",
+   "button3":"Nourishes",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777366110/Artboard3copy_c0b3638d-e7e9-4ce3-8f1d-92e45842159c_jaqbmg.png",
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458169/Artboard_1_43_wthq5k.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458183/Artboard_2_43_dujadp.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777462161/Artboard_3_8_4f809335-218c-4147-a69c-54c7f734f5d4_tummqv.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458188/Artboard_4_13_dcczqw.jpg",
+   "rating":"4.6 |  5 Reviews",
+   "cost":"₹224.00",
+    "count":"₹249.00",
+   "c":"10%Off",
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹25",
+"pay": [
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+  
+},
+{
+    "id":65,
+  "description":"Ginger Lime Hand Crème - 30 gm",
+   "button1":"Softens",
+   "button2":"Moisturises",
+   "button3":"Nourishes",
+    
+      
+    "static":"Trending",
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777366115/Artboard3copy_dffhws.png",
+      "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777462112/Artboard_2_40_cfwwbm.jpg" ,
+  "image2":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777462161/Artboard_3_8_4f809335-218c-4147-a69c-54c7f734f5d4_tummqv.jpg",
+  "image3":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777458219/Artboard_4_10_mkeeds.jpg",
+  "image4":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777457964/Artboard_5_10_oiexiv.jpg",
+   "rating":"4.67 |  6 Reviews",
+   "cost":"₹314.00",
+    "count":"₹349.00",
+   "c":"10%Off",
+   
+   
+  
+    "text":"MRP Inclusive of All Taxes.",
+   "discount":"Save ₹35",
+"pay": [
+  "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png",
+
+
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png",
+ "https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+],
+   "button":"Add to Cart"
+  
+   
+}
+
+]},
+{
+"cards5":[
+
+{
+    "id":66,
+  "description":"Strawberry Legs: Causes, Treatments & Tips to Prevent Them",
+  
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777373912/Strawberry_Legs_78dcfc92-ff72-403f-af70-b5456dcb6e96_hx31wl.jpg",
+  "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777374191/CAP_72675a19-ce21-4bb4-b6c0-11c80497dd0a_mukk08.jpg",
+   
+    "text":"Ever seen small dark spots on your legs that give your skin the appearance of the surface of a strawberry? Yep, that's what most people refer to as strawberry legs or strawberry skin. Don't panic, this condition is extremely common and completely treatable.",
+    "text1":"Sheetal Sharma ",
+    "date":" 08 Aug 2025",
+    "button":"Read More"
+
+
+
+  
+},
+{
+    "id":67,
+  "description":"A Complete Guide to Dandruff Causes, Symptoms & Treatments",
+  
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777373920/Say_Goodbye_to_Dandruff_Permanently_4338d0a4-a873-48d5-8933-5d4cd8d5d4a9_ekkpqn.jpg",
+
+   "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777374191/CAP_72675a19-ce21-4bb4-b6c0-11c80497dd0a_mukk08.jpg",
+    "text":"If you're reading this, you probably know more about dandruff than most persistent flakes, an itchy scalp and multiple failed “miracle” treatments. Dandruff isn’t a new issue and neither are the remedies. From home hacks to expensive formulas, the suggestions are endless. ",
+
+    "text1":"Navita Mathpal  ",
+    "date":" 28 Jul 2025",
+    "button":"Read More"
+
+
+
+  
+},
+{
+    "id":68,
+  "description":"Rosemary for Hair: Benefits, Types & Ways to Use Rosemary for Hair Growth",
+  
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777373931/Rosemary_for_Hair_f2a390a8-0e41-4d46-9606-4c829f11ae1d_tzzk2d.jpg",
+  "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777374417/BA_b4061ae6-19bb-4dad-83f9-daec2e60070f_amtjhu.jpg",
+
+   
+    "text":"Rosemary for hair has made a serious comeback in recent years and for good reason. It’s one of those rare ingredients that’s been around for centuries, and now, even science is backing up what tradition always supported.",
+    "text1":"Aishwarya Bhatia  ",
+     "date":"31 Jul 2025",
+    "button":"Read More"
+
+
+
+  
+},
+{
+    "id":69,
+  "description":"How to Fix an Oily Scalp Without Drying Out Your Hair?",
+  
+  
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777373960/Greasy_Hair_Every_Day_0631d3a5-1d67-433c-af4f-ba3268e85cbd_cw8kwn.jpg",
+  "image1":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777374417/BA_b4061ae6-19bb-4dad-83f9-daec2e60070f_amtjhu.jpg",
+
+   
+    "text":"The main reason for an oily scalp is the excessive production of sebum, a natural oil released by your sebaceous glands on your scalp. This oil is essential for protecting the scalp and keeping hair hydrated.",
+    "text1":"Navita Mathpal  ",
+    "date":"17 Jul 2025",
+    "button":"Read More"
+
+
+
+  
+}
+]},
+{
+"footer":[
+
+{
+  "id":70,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777377772/playstore.png_1_urvre9.png"
+
+},
+{
+  "id":71,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777377779/appstore_png_upv6g1.png"
+  
+},
+{
+  "id":72,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777435707/bare-logo_7fa9895f-4ea6-4ee2-afd2-2f20eceed3f6_d1fula.png"
+  
+},
+{
+  "id":73,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777435724/Artboard_1_1_0489af2e-1859-49d6-9451-bcbeec1ba7e5_fcnwsj.png"
+  
+},
+{
+  "id":74,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777435839/Artboard_1_2051f510-a6ca-4798-8036-c9e632a81cab_1_fe0eom.png"
+  
+},
+{
+  "id":75,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777435846/Layer_1_1_u53f2n.png"
+  
+},
+{
+  "id":76,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008487/Frame_1000005790_51b4376b-f17c-4463-9f0a-bbe3c41667f8_e1qkod.png"
+  
+},
+{
+  "id":77,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008531/Frame_1000005791_4f1dcbfe-3195-414f-9fc3-061174487a46_xml9yl.png"
+  
+},
+{
+  "id":78,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008547/Frame_1000005792_1fa1a6ce-45b3-4c0d-b9a8-4f6ea2ad828b_feplgw.png"
+  
+},
+{
+  "id":79,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008555/Frame_1000005793_ey8mlq.png"
+  
+},
+{
+  "id":80,
+  "image":"https://res.cloudinary.com/dyni7mbsq/image/upload/q_auto/f_auto/v1777008565/Frame_1000005794_juzhhm.png"
+  
+}
+]}
+]}

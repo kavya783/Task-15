@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'IBMPlexSans-Bold';
+  src: url('./Fonts/IBMPlexSans_Condensed-Bold.ttf') format('truetype');
+}
+ 
+@font-face {
+  font-family: 'IBMPlexSans-Semibold';
+  src: url('./Fonts/IBMPlexSans_Condensed-SemiBold.ttf') format('truetype');
+}
+ 
+@font-face {
+  font-family: 'IBMPlexSans-Regular';
+  src: url('./Fonts/IBMPlexSans_Condensed-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'IBMPlexSans-BoldItalic';
+  src: url('./Fonts/IBMPlexSans_SemiCondensed-BoldItalic.ttf') format('truetype');
+}
