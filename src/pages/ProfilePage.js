@@ -73,7 +73,7 @@ function ProfilePage() {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       if (currentUser) {
-        setUser(currentUser);
+        setUser({ ...currentUser });
 
         const userSnapshot = await get(ref(db, "users/" + currentUser.uid));
 
@@ -151,14 +151,14 @@ function ProfilePage() {
   useEffect(() => {
     handleOrders();
   }, []);
-
+  console.log(user?.photoURL);
   return (
     <Box
       sx={{
         display: "flex",
         flexDirection: "column",
         minHeight: "100vh",
-        mt:15
+        mt: 15
       }}
     >
 
@@ -175,7 +175,7 @@ function ProfilePage() {
             width: { xs: "100%", sm: 280 },
             background: "#f2e9e9",
             borderRight: "1px solid #ddd",
-            p: 2,
+            p: 3,
 
 
           }}
@@ -183,21 +183,20 @@ function ProfilePage() {
           <Box sx={{ background: Colors.black, p: 2 }}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
 
-              {user?.photoURL ? (
-                <Box
-                  component="img"
+              {user && user.photoURL ? (
+                <img
                   src={user.photoURL}
                   alt="profile"
-                  sx={{
-                    width: 30,
-                    height: 30,
+                  style={{
+                    width: 40,
+                    height: 40,
                     borderRadius: "50%",
+                    objectFit: "cover"
                   }}
                 />
               ) : (
-                <Person2Icon sx={{ fontSize: 50, color: "white" }} />
+                <Person2Icon sx={{ fontSize: 40, color: "white" }} />
               )}
-
               <Box>
                 <Typography
                   variant="h6"
@@ -207,7 +206,7 @@ function ProfilePage() {
                 </Typography>
 
                 <Typography
-                  sx={{ fontSize: Theme.font12Bold, color: Colors.white }}
+                  sx={{ fontSize: Theme.font12SemiBold, color: Colors.white }}
                 >
                   {user?.email}
                 </Typography>
@@ -217,25 +216,50 @@ function ProfilePage() {
 
             <Divider sx={{ mt: 2 }} />
           </Box>
-          <Box sx={{ display: { xs: "block", sm: "none" } }}>
+          <Box
+            sx={{
+              width: "310px",
+              // background: "#f2f2f2",
+              // borderRight: "1px solid #ddd",
+              p: 1,
+              minHeight: "100%",
+              display: { xs: "block", sm: "none" },
+
+            }}
+          >
+
+
             <Tabs
               value={tabValue}
               onChange={handleTabChange}
               variant="scrollable"
               scrollButtons="auto"
+              sx={{
+                "& .MuiTabs-indicator": {
+                  backgroundColor: "black"
+                },
+                "& .Mui-selected": {
+                  color: "black",
+                  fontWeight: "bold"
+                }
+              }}
             >
               <Tab icon={<CasesIcon />} label="Orders" />
               <Tab icon={<AddCardIcon />} label="iCash" />
               <Tab icon={<StyleIcon />} label="Referrals" />
+              <Tab icon={<HomeIcon />} label="Address" />
+              <Tab icon={<ChatIcon />} label="Chat" />
+              <Tab label="Logout" onClick={handleLogout} />
             </Tabs>
           </Box>
 
           <Box
             sx={{
-              flexGrow: 1,
-              p: 2,
+              flex: 1,
+              p: 4,
               display: { xs: "block", sm: "none" },
-              overflowY: "auto"
+
+
             }}
           >
             <Box
@@ -786,7 +810,7 @@ function ProfilePage() {
                   </Button>
                 </Box>
               </Box>
-                 <Typography sx={{userData}}>Address</Typography>
+
 
 
 
@@ -798,7 +822,7 @@ function ProfilePage() {
       </Box>
 
 
-      <Box sx={{ mt: "auto" }}>
+      <Box sx={{ mt: { xs: "auto", sm: "auto" } }}>
         <Footer />
       </Box>
       <Snackbar
