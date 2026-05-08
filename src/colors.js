@@ -8,7 +8,9 @@ const Colors = {
   green:"#2e850e",
   gray:"#42434D",
   background:"#FEF3C7",
-  brown:"#92400E"
+  brown:"#92400E",
+  red:"#ea1313",
+  border:"#f6dfdf"
 };
 
 export default Colors;

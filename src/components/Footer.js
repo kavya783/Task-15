@@ -223,7 +223,7 @@ function Footer() { const { data = [] } = useSelector(
         }}
       >
         <Typography sx={{ color: "#aaa",  fontSize:Theme.font14Bold, }}>
-       Copyright © 2026 Onesto Labs Private Limited. All Rights Reserved
+       Copyright © 2026 Innovist Private Limited. All Rights Reserved
         </Typography>
       </Box>
     </Box>

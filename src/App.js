@@ -10,8 +10,9 @@ import { ToastContainer } from "react-toastify";
 import ProfilePage from "./pages/ProfilePage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ProductsDetailsPage from "./pages/ProductsDetailsPage";
-
+import { auth} from "./firebase"
 import { useEffect, useState } from "react";
+import {db} from "./firebase";
 
 
 
@@ -31,8 +32,9 @@ function App() {
    <BrowserRouter>
  <AppBarr cartItems={cartItems} setCartItems={setCartItems} />
   <Routes>
-    <Route path="/" element={<HomePage
-     cartItems={cartItems}
+    <Route path="/" element={
+      <HomePage
+       cartItems={cartItems}
         setCartItems={setCartItems} />} />
     <Route path="/login" element={<LoginPage />} />
     <Route path="/signup" element={<SignupForm />} />

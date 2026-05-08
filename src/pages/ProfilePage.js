@@ -10,9 +10,10 @@ import {
   Card,
   CardContent,
   Snackbar,
+  TextField,
 
 } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Colors from "../colors";
 import { Theme } from "../GlobalStyles";
 // import { GoogleAuthProvider,} from "firebase/auth";
@@ -36,9 +37,9 @@ function ProfilePage() {
   const [orders, setOrders] = useState([]);
   const [showOrders, setShowOrders] = useState(false);
   const [showIcash, setShowIcash] = useState(false);
-
+  const [showAddress, setShowAddress] = useState(false);
   const [showReferrals, setShowReferrals] = useState(false);
-
+  const [showChat, setShowChat] = useState(false);
   const [tabValue, setTabValue] = useState(0);
   const [activeTab, setActiveTab] = useState("orders");
   const [snackOpen, setSnackOpen] = useState(false);
@@ -111,6 +112,8 @@ function ProfilePage() {
     setShowOrders(true);
     setShowIcash(false);
     setShowReferrals(false);
+    setShowAddress(false);
+    setShowChat(false);
     setActiveTab("orders");
   };
 
@@ -118,6 +121,8 @@ function ProfilePage() {
     setShowIcash(true);
     setShowOrders(false);
     setShowReferrals(false);
+    setShowAddress(false);
+    setShowChat(false);
     setActiveTab("icash");
   };
 
@@ -125,9 +130,26 @@ function ProfilePage() {
     setShowReferrals(true);
     setShowOrders(false);
     setShowIcash(false);
+    setShowAddress(false);
+    setShowChat(false);
     setActiveTab("referrals");
   };
-
+  const handleAddress = () => {
+    setShowAddress(true);
+    setShowReferrals(false);
+    setShowOrders(false);
+    setShowIcash(false);
+    setShowChat(false);
+    setActiveTab("address");
+  };
+  const handleChat = () => {
+    setShowChat(true);
+    setShowAddress(false);
+    setShowReferrals(false);
+    setShowOrders(false);
+    setShowIcash(false);
+    setActiveTab("chat");
+  };
 
   const [copied, setCopied] = useState(false);
 
@@ -146,12 +168,15 @@ function ProfilePage() {
     if (newValue === 0) handleOrders();
     if (newValue === 1) handleIcash();
     if (newValue === 2) handleReferrals();
+    if (newValue === 3) handleAddress();
+    if (newValue === 4) handleChat();
 
   };
   useEffect(() => {
     handleOrders();
   }, []);
   console.log(user?.photoURL);
+  console.log(userData);
   return (
     <Box
       sx={{
@@ -281,11 +306,11 @@ function ProfilePage() {
                       <CardContent>
 
 
-                        {order.items.map((item, i) => (
+                        {order.items.map((item1, i) => (
                           <Box key={i} sx={{ mt: 1 }}>
                             <Box
                               component="img"
-                              src={item.image}
+                              src={item1.image}
 
                               sx={{
                                 width: "100%",
@@ -298,7 +323,7 @@ function ProfilePage() {
                             <Typography fontWeight="bold">
                               Order Total: ₹{order.total}
                             </Typography>
-                            <Typography>{item.description}</Typography>
+                            <Typography>{item1.name}</Typography>
 
                             <DeleteIcon
                               onClick={() => removeOrderItem(index, i)}
@@ -408,12 +433,12 @@ function ProfilePage() {
 
 
                 <Box sx={{ textAlign: "flex-start", mt: 5, }}>
-                  <Typography sx={{ fontSize: Theme.font10SemiBold, color: "gray", ml: 0, p: 0 }}>
+                  <Typography sx={{ fontSize: Theme.font12Bold, color: "gray", ml: 0, p: 0 }}>
                     Share this link with a friend so they can claim the 100 ICash.
                   </Typography>
                 </Box>
                 <Box sx={{ mt: 3, display: "flex", justifyContent: "start", gap: 2 }}>
-                  <Card sx={{ width: 150, p: 1 }}>
+                  <Card sx={{ width: 100, p: 1, height: 150 }}>
                     <CardContent>
                       <Typography sx={{ fontSize: Theme.font14Bold, mt: 1, color: Colors.gray }}>
                         They get
@@ -425,7 +450,7 @@ function ProfilePage() {
 
                     </CardContent>
                   </Card>
-                  <Card sx={{ width: 150, p: 2 }}>
+                  <Card sx={{ width: 100, p: 2, height: 150 }}>
                     <CardContent>
                       <Typography sx={{ fontSize: Theme.font14Bold, color: Colors.gray, mt: 1 }}>
                         You get
@@ -479,14 +504,109 @@ function ProfilePage() {
                     </Button>
                   </Box>
                 </Box>
+              </Box>
+            )}
+            {showAddress && (
+              <Box>
 
 
+                <Box sx={{ mt: 5, borderRadius: 2, boxShadow: 3, mb: 3, width: "100%" }}>
+
+                  <Typography sx={{ fontSize: Theme.font20Bold, color: "gray", display: { xs: "block", sm: "none", md: "none" }, mt: 4, textAlign: "center", }}>
+                    My Address
+                  </Typography>
+                  <Link sx={{ ml: 5, mb: 3, mt: 2 }} size="small">Add Address</Link>
+                  <Typography sx={{ ml: 2, textAlign: "center", }}>India</Typography>
+                  <Button sx={{ ml: 2, mt: 5, color: Colors.black, background: Colors.yellow, mb: 3 }} variant="contained">Edit</Button>
+                  <Button variant="outlined" sx={{ ml: 2, mt: 5, color: Colors.black, mb: 3 }}>Delete</Button>
+
+                </Box>
+
+              </Box>
+
+            )}
+             {showChat && (
+            <Box>
 
 
+              <Box sx={{ mt: 1, borderRadius: 2, boxShadow: 3, mb: 3, width: { sm:"100%", md: "30%" }, ml: 0 }}>
+                <Typography sx={{ fontSize: Theme.font20Bold, color: Colors.black, display: { xs: "block", sm: "none", md: "none" }, mt: 6, ml: { sm: 0, md: 0 }, textAlign: "center" }}>
+                  Innovist
+                </Typography>
+                <Box sx={{ ml: 3 }}>
+                  <label >Full Name</label>
+                </Box>
+                <TextField
+
+                  label="Full Name"
+                  name="Full name"
+                  type="name"
+
+                  size="medium"
+                  margin="dense"
+
+                  sx={{
+                    input: { color: Colors.black },
+                    label: { color: Colors.gray },
+                    ml: 3,
+                    mr: 5
+
+                  }
+                  }
+                />
+                <Box sx={{ ml: 3 }}>
+                  <label >Email</label>
+                </Box>
+                <TextField
+                  label="Email"
+                  name="Email"
+                  type="Email"
+
+                  size="medium"
+                  margin="dense"
+
+                  sx={{
+                    input: { color: Colors.white },
+                    label: { color: Colors.gray },
+                    ml: 3,
+                    mr: 5
+
+                  }
+                  }
+                />
+                <Box sx={{ ml: 3 }}>
+                  <label >Phone Number</label>
+                </Box>
+                <TextField
+                  label="Phone Number"
+                  name="Phone Number"
+                  type="Phone Number"
+
+                  size="medium"
+                  margin="dense"
+
+                  sx={{
+                    input: { color: Colors.black },
+                    label: { color: Colors.gray },
+                    ml: 3,
+                    mr: 5,
+                    mb: 5
+
+                  }
+                  }
+                />
+                <Button variant="contained" sx={{ml:5,background:Colors.black,color:Colors.white,mb:4}}>Let's Chat</Button>
 
 
               </Box>
-            )}
+            </Box>
+          )}
+
+
+
+
+
+
 
 
           </Box>
@@ -547,7 +667,7 @@ function ProfilePage() {
               </Button>
 
               <Button fullWidth
-
+                onClick={handleAddress}
                 sx={{
                   mb: 2,
                   gap: 2,
@@ -561,7 +681,17 @@ function ProfilePage() {
                 <HomeIcon /> ADDRESS
               </Button>
 
-              <Button fullWidth sx={{ mb: 2, gap: 2, color: Colors.black }}
+              <Button fullWidth
+                onClick={handleChat}
+                sx={{
+                  mb: 2,
+                  gap: 2,
+                  color: activeTab === "chat" ? "white" : Colors.black,
+                  backgroundColor: activeTab === "chat" ? "black" : "transparent",
+                  "&:hover": {
+                    backgroundColor: activeTab === "chat" ? "black" : "#eee"
+                  }
+                }}
                 variant="outlined">
                 <ChatIcon /> Chat With Us
               </Button>
@@ -603,11 +733,11 @@ function ProfilePage() {
 
 
 
-                      {order.items.map((item, i) => (
+                      {order.items.map((item1, i) => (
                         <Box key={i} sx={{ mt: 1 }}>
                           <Box
                             component="img"
-                            src={item.image}
+                            src={item1.image}
 
                             sx={{
                               width: { sm: "70%", md: "50%", lg: "20%" },
@@ -617,10 +747,11 @@ function ProfilePage() {
                               cursor: "pointer"
                             }}
                           />
-                          <Typography fontWeight="bold">
+                          <Typography sx={{ fontSize: Theme.font18Bold }}>{item1.name}</Typography>
+                          <Typography sx={{ fontSize: Theme.font16Bold, color: Colors.gray }}>
                             Order Total: ₹{order.total}
                           </Typography>
-                          <Typography>{item.description}</Typography>
+
 
                           <DeleteIcon
                             onClick={() => removeOrderItem(index, i)}
@@ -818,12 +949,105 @@ function ProfilePage() {
 
             </Box>
           )}
+          {showAddress && (
+            <Box>
+
+
+              <Box sx={{ mt: 5, borderRadius: 2, boxShadow: 3, mb: 3, width: { sm: 400, md: "100%" } }}>
+                <Typography sx={{ fontSize: Theme.font20Bold, color: "gray", display: { xs: "none", sm: "block", md: "block" }, mt: 6, ml: { sm: 0, md: 0 }, textAlign: "center" }}>
+                  My Address
+                </Typography>
+                <Button variant="outlined" sx={{ ml: { sm: 30, md: 60, lg: 110 }, mt: 3, mb: 3 }}>Add Address</Button>
+                <Typography sx={{ ml: { sm: 10, lg: 20 } }}>India</Typography>
+                <Button sx={{ ml: { sm: 5, lg: 20 }, mt: 5, color: Colors.black, background: Colors.yellow, mb: 3 }} variant="contained">Edit</Button>
+                <Button variant="outlined" sx={{ ml: 5, mt: 5, color: Colors.black, mb: 3 }}>Delete</Button>
+              </Box>
+            </Box>
+          )}
+          {showChat && (
+            <Box>
+
+
+              <Box sx={{ mt: 1, borderRadius: 2, boxShadow: 3, mb: 3, width: { sm: 400, md: "50%",lg:"30%" }, ml:{sm:5,md:10,lg:20} }}>
+                <Typography sx={{ fontSize: Theme.font20Bold, color: Colors.black, display: { xs: "none", sm: "block", md: "block" }, mt: 6, ml: { sm: 0, md: 0 }, textAlign: "center" }}>
+                  Innovist
+                </Typography>
+                <Box sx={{ ml: 3 }}>
+                  <label >Full Name</label>
+                </Box>
+                <TextField
+
+                  label="Full Name"
+                  name="Full name"
+                  type="name"
+
+                  size="medium"
+                  margin="dense"
+
+                  sx={{
+                    input: { color: Colors.black },
+                    label: { color: Colors.gray },
+                    ml: 3,
+                    mr: 5
+
+                  }
+                  }
+                />
+                <Box sx={{ ml: 3 }}>
+                  <label >Email</label>
+                </Box>
+                <TextField
+                  label="Email"
+                  name="Email"
+                  type="Email"
+
+                  size="medium"
+                  margin="dense"
+
+                  sx={{
+                    input: { color: Colors.white },
+                    label: { color: Colors.gray },
+                    ml: 3,
+                    mr: 5
+
+                  }
+                  }
+                />
+                <Box sx={{ ml: 3 }}>
+                  <label >Phone Number</label>
+                </Box>
+                <TextField
+                  label="Phone Number"
+                  name="Phone Number"
+                  type="Phone Number"
+
+                  size="medium"
+                  margin="dense"
+
+                  sx={{
+                    input: { color: Colors.black },
+                    label: { color: Colors.gray },
+                    ml: 3,
+                    mr: 5,
+                    mb: 5
+
+                  }
+                  }
+                />
+                <Button variant="contained" sx={{ml:5,background:Colors.black,color:Colors.white,mb:4}}>Let's Chat</Button>
+
+
+              </Box>
+            </Box>
+          )}
         </Box>
       </Box>
 
 
       <Box sx={{ mt: { xs: "auto", sm: "auto" } }}>
-        <Footer />
+         <div id="footer">
+  <Footer />
+</div>
       </Box>
       <Snackbar
         open={snackOpen}

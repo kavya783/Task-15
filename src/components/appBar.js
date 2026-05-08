@@ -18,15 +18,23 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { Theme } from "../GlobalStyles";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import Badge from '@mui/material/Badge';
+import Badge from "@mui/material/Badge";
 import DeleteIcon from "@mui/icons-material/Delete";
 import { useNavigate } from "react-router-dom";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import CloseIcon from "@mui/icons-material/Close";
 import { onAuthStateChanged } from "firebase/auth";
-
+// import { useRef } from "react";
 import { ref, push } from "firebase/database";
 import { auth, db } from "../firebase";
+import { toast } from "react-toastify";
+
+const phrases = [
+  "Search Products...",
+  "Search for Shampoo...",
+  "Search for Hair Conditioner...",
+  "Search for Body Wash..."
+];
 
 const AppBarr = ({ cartItems, setCartItems }) => {
   const [placeholderText, setPlaceholderText] = useState("");
@@ -45,43 +53,65 @@ const AppBarr = ({ cartItems, setCartItems }) => {
     const value = Number(cleaned);
     return isNaN(value) ? 0 : value;
   };
+
   const subtotal = cartItems.reduce((total, item) => {
-    return total + getPrice(item.cost) * (item.quantity || 1);
+    return total + getPrice(item.price) * (item.quantity || 1);
   }, 0);
 
   const discount = 0;
-
   const shipping = 0;
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const { data = [] } = useSelector((state) => state.getproductdata || {});
 
-
+  const scrollToFooter = () => {
+    document.getElementById("footer")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const estimatedTotal = subtotal - discount + shipping;
+
+  const totalCartQuantity = cartItems.reduce((total, item) => {
+    return total + (item.quantity || 1);
+  }, 0);
 
   const navbarData =
     Array.isArray(data)
       ? data.find((item) => item.navbar)?.navbar || []
       : [];
+
   const cardsData =
     Array.isArray(data)
       ? data.find((item) => item.cards)?.cards || []
       : [];
+
   const filteredProducts = cardsData.filter((item) =>
     item.description?.toLowerCase().includes(search.toLowerCase())
   );
-  useEffect(() => {
-    dispatch(getProductDataActionInitiate());
-  }, [dispatch]);
+
   const removeFromCart = (indexToRemove) => {
-    setCartItems((prev) =>
-      prev.filter((_, index) => index !== indexToRemove)
-    );
+    setCartItems((prev) => prev.filter((_, index) => index !== indexToRemove));
     setSnackOpen(true);
   };
-  const phrases = ["Search Products...", "Search for Shampoo...", "Search for Hair Conditioner...", "Search for Body Wash..."];
+
+  const increaseQty = (index) => {
+    setCartItems((prev) =>
+      prev.map((item, i) =>
+        i === index ? { ...item, quantity: (item.quantity || 1) + 1 } : item
+      )
+    );
+  };
+
+  const decreaseQty = (index) => {
+    setCartItems((prev) =>
+      prev.map((item, i) =>
+        i === index
+          ? { ...item, quantity: item.quantity > 1 ? item.quantity - 1 : 1 }
+          : item
+      )
+    );
+  };
 
   useEffect(() => {
     let phraseIndex = 0;
@@ -102,7 +132,6 @@ const AppBarr = ({ cartItems, setCartItems }) => {
         typingSpeed = 150;
       }
 
-
       if (!isDeleting && charIndex === currentPhrase.length) {
         isDeleting = true;
         typingSpeed = 2000;
@@ -118,6 +147,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
     const timer = setTimeout(type, typingSpeed);
     return () => clearTimeout(timer);
   }, []);
+
   useEffect(() => {
     setCartItems((prev) =>
       prev.map((item) => ({
@@ -126,88 +156,69 @@ const AppBarr = ({ cartItems, setCartItems }) => {
       }))
     );
   }, [setCartItems]);
-  const increaseQty = (index) => {
-    setCartItems((prev) =>
-      prev.map((item, i) =>
-        i === index
-          ? { ...item, quantity: (item.quantity || 1) + 1 }
-          : item
-      )
-    );
-  };
-  const decreaseQty = (index) => {
-    setCartItems((prev) =>
-      prev.map((item, i) =>
-        i === index
-          ? {
-            ...item,
-            quantity: item.quantity > 1 ? item.quantity - 1 : 1
-          }
-          : item
-      )
-    );
-  };
+
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (currentUser) {
-        setUser(currentUser);
-      } else {
-        setUser(null);
-      }
+      setUser(currentUser || null);
     });
 
     return () => unsubscribe();
   }, []);
+
   const handlePayment = () => {
     const currentUser = auth.currentUser;
 
-
     if (!currentUser) {
-      setSnackOpen(true);
+      toast.error("User not logged in");
       navigate("/login");
       return;
     }
-
+    const amount = Math.round((estimatedTotal || 0) * 100);
+    console.log(amount);
+    if (!window.Razorpay) {
+      alert("Razorpay script not loaded");
+      return;
+    }
 
     const options = {
       key: "rzp_test_SlYhoGItP2cIc0",
-      amount: Math.round(estimatedTotal * 100),
+      amount,
       currency: "INR",
-
       handler: async function (response) {
         const orderRef = ref(db, "orders/" + currentUser.uid);
 
-        const orderData = {
+        await push(orderRef, {
           items: cartItems,
           total: estimatedTotal,
-          itemCount: cartItems.length,
-          createdAt: new Date().toISOString(),
           paymentId: response.razorpay_payment_id,
-        };
-
-        await push(orderRef, orderData);
+          createdAt: new Date().toISOString(),
+        });
 
         setCartItems([]);
         setOpen(false);
+        toast.success("Payment Successful");
+        navigate("/profilepage");
       },
-
       prefill: {
         name: currentUser.displayName || "User",
         email: currentUser.email,
         contact: "9999999999",
       },
-
-      theme: {
-        color: "#000",
-      },
+      theme: { color: "#000" },
     };
 
     const razor = new window.Razorpay(options);
     razor.open();
   };
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+  }, []);
+
+  useEffect(() => {
+    dispatch(getProductDataActionInitiate());
+  }, [dispatch]);
+
 
   return (
 
@@ -274,7 +285,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                   />
                 )}
                 <IconButton onClick={() => setOpen(true)}>
-                  <Badge badgeContent={cartItems.length} color="error">
+                  <Badge badgeContent={totalCartQuantity} color="error">
                     <ShoppingCartIcon sx={{ color: Colors.white, mr: { lg: 20 } }} />
                   </Badge>
                 </IconButton>
@@ -332,11 +343,11 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                   }}
                 >
                   {filteredProducts.length > 0 ? (
-                    filteredProducts.map((item, index) => (
+                    filteredProducts.map((item1, index) => (
                       <Box
                         key={index}
                         onClick={() => {
-                          navigate('/productdetails', { state: { item } },
+                          navigate('/productdetails', { state: { item1 } },
                           );
                           setSearch("");
                         }}
@@ -353,7 +364,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                       >
                         <Box
                           component="img"
-                          src={item.image}
+                          src={item1.image}
                           sx={{
                             width: 45,
                             height: 45,
@@ -369,7 +380,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                               fontWeight: 600
                             }}
                           >
-                            {item.description}
+                            {item1.name}
                           </Typography>
 
 
@@ -408,7 +419,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                 />
               )}
               <IconButton onClick={() => setOpen(true)}>
-                <Badge badgeContent={cartItems.length} color="error">
+                <Badge badgeContent={totalCartQuantity} color="error">
                   <ShoppingCartIcon sx={{ color: "white" }} />
                 </Badge>
               </IconButton>
@@ -430,17 +441,19 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                 >
 
                   <Box sx={{ p: 2 }}>
-                    <Typography sx={{ fontWeight: "bold", mb: 2, fontSize: "22px" }}>
+                    <Typography sx={{ fontWeight: "bold", fontSize: "22px" }}>
                       Your Cart ({cartItems.length} items)
                     </Typography>
                     <IconButton onClick={() => setOpen(false)}>
                       <CloseIcon />
                     </IconButton>
 
+
+
                     {cartItems.length === 0 ? (
                       <Typography>No items</Typography>
                     ) : (
-                      cartItems.map((item, index) => (
+                      cartItems.map((item1, index) => (
                         <Box
                           key={index}
                           sx={{
@@ -454,7 +467,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                           }}
                         >
                           <img
-                            src={item.image}
+                            src={item1.image}
                             alt=""
                             width="70"
                             style={{ borderRadius: "10px" }}
@@ -462,11 +475,11 @@ const AppBarr = ({ cartItems, setCartItems }) => {
 
                           <Box sx={{ flex: 1 }}>
                             <Typography sx={{ fontSize: "14px" }}>
-                              {item.description}
+                              {item1.name}
                             </Typography>
 
                             <Typography sx={{ fontWeight: "bold", color: "black", mt: 1 }}>
-                              ₹{((getPrice(item.cost || item.price) || 0) * (item.quantity || 1)).toFixed(2)}
+                              ₹{((getPrice(item1.price) || 0) * (item1.quantity || 1)).toFixed(2)}
                             </Typography>
                           </Box>
 
@@ -487,7 +500,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                               -
                             </Typography>
 
-                            <Typography>{item.quantity || 1}</Typography>
+                            <Typography>{item1.quantity || 1}</Typography>
 
                             <Typography
                               sx={{ cursor: "pointer", px: 1 }}
@@ -590,11 +603,11 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                 }}
               >
                 {filteredProducts.length > 0 ? (
-                  filteredProducts.map((item, index) => (
+                  filteredProducts.map((item1, index) => (
                     <Box
                       key={index}
                       onClick={() => {
-                        navigate('/productdetails', { state: { item } },
+                        navigate('/productdetails', { state: { item1 } },
                         );
                         setSearch("");
                       }}
@@ -611,7 +624,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                     >
                       <Box
                         component="img"
-                        src={item.image}
+                        src={item1.image}
                         sx={{
                           width: 45,
                           height: 45,
@@ -627,7 +640,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                             fontWeight: 600
                           }}
                         >
-                          {item.description}
+                          {item1.name}
                         </Typography>
 
                         <Typography
@@ -636,7 +649,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                             color: "green"
                           }}
                         >
-                          {item.cost}
+                          {item1.price}
                         </Typography>
                       </Box>
                     </Box>
@@ -661,41 +674,62 @@ const AppBarr = ({ cartItems, setCartItems }) => {
             }}
           >
 
-            <Typography onClick={() => setMenuType("best")}
-              sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold, }}>
+            <Typography
+              onMouseEnter={() => setMenuType("best")}
+              onMouseLeave={() => setMenuType("")}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                mt: 1,
+                background: Colors.black,
+                color: Colors.white,
+                mb: 1,
+                fontSize: Theme.font16Bold,
+                cursor: "pointer"
+              }}
+            >
               Best Sellers <ArrowDropDownIcon />
-
             </Typography>
 
 
             <Typography sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>New Launches</Typography>
 
-            <Typography onClick={() => setMenuType("brands")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
+            <Typography onMouseEnter={() => setMenuType("brands")}
+              onMouseLeave={() => setMenuType("")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
 
               Brands <ArrowDropDownIcon />
             </Typography>
 
-            <Typography onClick={() => setMenuType("concerns")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
+            <Typography onMouseEnter={() => setMenuType("concerns")}
+              onMouseLeave={() => setMenuType("")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
 
               Concerns <ArrowDropDownIcon />
             </Typography>
 
-            <Typography onClick={() => setMenuType("hair")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
+            <Typography onMouseEnter={() => setMenuType("hair")}
+              onMouseLeave={() => setMenuType("")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
 
               Hair Care <ArrowDropDownIcon />
             </Typography>
 
-            <Typography onClick={() => setMenuType("skin")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
+            <Typography onMouseEnter={() => setMenuType("skin")}
+              onMouseLeave={() => setMenuType("")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
 
               Skin Care <ArrowDropDownIcon />
             </Typography>
 
-            <Typography onClick={() => setMenuType("sun")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
+            <Typography onMouseEnter={() => setMenuType("sun")}
+              onMouseLeave={() => setMenuType("")} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
               Sun Care <ArrowDropDownIcon />
             </Typography>
 
-           <Typography sx={{ fontSize: Theme.font16Bold, mt: 1 }}>Careers</Typography>
-            <Typography sx={{ fontSize: Theme.font16Bold, mt: 1 }}>About us</Typography>
+            <Typography onClick={scrollToFooter} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
+              Careers
+            </Typography>
+
+            <Typography onClick={scrollToFooter} sx={{ display: "flex", alignItems: "center", mt: 1, background: Colors.black, color: Colors.white, mb: 1, fontSize: Theme.font16Bold }}>
+              About us
+            </Typography>
           </Box>
         </Toolbar>
       </AppBar>
@@ -1254,7 +1288,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
             open={snackOpen}
             autoHideDuration={2000}
             onClose={() => setSnackOpen(false)}
-            message="Item removed from cart"
+            message="User is not Login"
             anchorOrigin={{
               vertical: "top",
               horizontal: "center"

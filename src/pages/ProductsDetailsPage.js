@@ -16,21 +16,22 @@ import PercentIcon from "@mui/icons-material/Percent";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CloseIcon from "@mui/icons-material/Close";
-// import ZoomInIcon from "@mui/icons-material/ZoomIn";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel } from "swiper/modules";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
+
 import "swiper/css";
 import "swiper/css/mousewheel";
+
 import Footer from "../components/Footer";
 
 function ProductsDetailsPage({ cartItems = [], setCartItems }) {
-
   const [snackOpen, setSnackOpen] = useState(false);
 
   const location = useLocation();
   const item = location.state?.item;
+
   const swiperRef = useRef(null);
 
   const [value, setValue] = useState(0);
@@ -40,25 +41,33 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
     return <Typography sx={{ mt: 10 }}>No Product Found</Typography>;
   }
 
-  const images =
-    item.gallery ||
-    [item.image, item.image1, item.image2, item.image3, item.image4].filter(
-      Boolean
+  // JSON structure batti images
+  const images = [
+    item.image,
+    item.subimages?.[0]?.image1,
+    item.subimages?.[0]?.image2,
+    item.subimages?.[0]?.image3,
+    item.subimages?.[0]?.image4
+  ].filter(Boolean);
+
+  const handleCart = (item1) => {
+    const existingItemIndex = cartItems.findIndex(
+      (cartItem) => cartItem.name === item1.name
     );
-  const isInCart = (item) => {
-    return cartItems.some((cartItem) => cartItem.description === item.description);
-  };
-  const handleCart = (item) => {
-    if (isInCart(item)) {
 
-      setCartItems(cartItems.filter(
-        (cartItem) => cartItem.description !== item.description
-      ));
+    if (existingItemIndex !== -1) {
+      const updatedCart = cartItems.map((cartItem, index) =>
+        index === existingItemIndex
+          ? { ...cartItem, quantity: (cartItem.quantity || 1) + 1 }
+          : cartItem
+      );
+
+      setCartItems(updatedCart);
     } else {
-
-      setCartItems([...cartItems, item]);
-      setSnackOpen(true);
+      setCartItems([...cartItems, { ...item1, quantity: 1 }]);
     }
+
+    setSnackOpen(true);
   };
 
   return (
@@ -67,7 +76,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
         mt: { xs: 12, md: 18 },
         display: "flex",
         flexDirection: "column",
-        minHeight: "100vh",
+        minHeight: "100vh"
       }}
     >
       <Box
@@ -78,6 +87,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
           flex: 1
         }}
       >
+        {/* LEFT SIDE */}
 
         <Box
           sx={{
@@ -87,13 +97,13 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
             gap: 2
           }}
         >
+          
 
           <Box
             sx={{
               display: { xs: "block", md: "none" },
               position: "relative",
-              mt: { xs: 3, sm: 5 },
-
+              mt: { xs: 3, sm: 5 }
             }}
           >
             <Box
@@ -109,25 +119,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
                 boxShadow: 4
               }}
             />
-            {item.static && (
-              <Typography
-                sx={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  backgroundColor: Colors.background,
-                  color: Colors.brown,
-                  px: 1,
-                  py: 0.0,
-                  fontSize: Theme.font14Bold,
-                  borderTopLeftRadius: 4,
-                  borderTopRightRadius: 1,
-                  borderBottomRightRadius: 8
-                }}
-              >
-                {item.static}
-              </Typography>
-            )}
+
             <Box
               sx={{
                 position: "absolute",
@@ -155,6 +147,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
             </Box>
           </Box>
 
+      
 
           <Box
             sx={{
@@ -206,6 +199,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
             </IconButton>
           </Box>
 
+       
 
           <Box
             sx={{
@@ -224,44 +218,12 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
                 objectFit: "cover",
                 cursor: "zoom-in",
                 ml: { md: 0, lg: 15 },
-                boxShadow: 4,
-
+                boxShadow: 4
               }}
             />
-            {item.static && (
-              <Typography
-                sx={{
-                  position: "absolute",
-                  top: 0,
-                  left: 120,
-                  backgroundColor: Colors.background,
-                  color: Colors.brown,
-                  px: 1,
-                  py: 0.4,
-                  fontSize: Theme.font14Bold,
-                  borderTopLeftRadius: 4,
-                  borderTopRightRadius: 1,
-                  borderBottomRightRadius: 8
-                }}
-              >
-                {item.static}
-              </Typography>
-            )}
-
-            {/* <IconButton
-    onClick={() => setOpen(true)}
-    sx={{
-      position: "absolute",
-      bottom: 10,
-      right: 10,
-      bgcolor: "white",
-      boxShadow: 2
-    }}
-  >
-    <ZoomInIcon />
-  </IconButton> */}
           </Box>
 
+       
 
           <Modal open={open} onClose={() => setOpen(false)}>
             <Box
@@ -271,7 +233,6 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
                 left: "50%",
                 transform: "translate(-50%, -50%)",
                 width: "90%",
-
                 outline: "none"
               }}
             >
@@ -302,8 +263,14 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
           </Modal>
         </Box>
 
+      
 
-        <Box sx={{ width: { xs: "100%", md: "48%" }, ml: { xs: 0, sm: 0, md: 10, lg: 0 } }}>
+        <Box
+          sx={{
+            width: { xs: "100%", md: "48%" },
+            ml: { xs: 0, sm: 0, md: 10, lg: 0 }
+          }}
+        >
           <Typography
             sx={{
               fontSize: Theme.headings,
@@ -311,51 +278,75 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
               ml: 1
             }}
           >
-            {item.description}
+            {item.name}
           </Typography>
 
-          <Box sx={{ display: "flex", gap: 1, mt: 2, flexWrap: "wrap", ml: { xs: 2, md: 1 } }}>
-            {[item.button1, item.button2, item.button3]
-              .filter(Boolean)
-              .map((tag, i) => (
-                <Typography
-                  key={i}
-                  sx={{
-                    border: "1px solid #ddd",
-                    px: 1,
-                    py: 0.5,
-                    borderRadius: 2
-                  }}
-                >
-                  {tag}
-                </Typography>
-              ))}
+       
+
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              mt: 2,
+              flexWrap: "wrap",
+              ml: { xs: 2, md: 1 }
+            }}
+          >
+            {item.features?.map((feature, i) => (
+              <Typography
+                key={i}
+                sx={{
+                  border: "1px solid #ddd",
+                  px: 1,
+                  py: 0.5,
+                  borderRadius: 2
+                }}
+              >
+                {feature}
+              </Typography>
+            ))}
           </Box>
 
+          
 
-          <Box sx={{ display: "flex", gap: 2, mt: 2, alignItems: "center", ml: { xs: 2, md: 1 } }}>
+          <Box
+            sx={{
+              display: "flex",
+              gap: 2,
+              mt: 2,
+              alignItems: "center",
+              ml: { xs: 2, md: 1 }
+            }}
+          >
             <Rating
               value={parseFloat(item.rating)}
               precision={0.1}
               readOnly
               size="small"
             />
+
             <Typography>{item.rating}</Typography>
           </Box>
 
+  
           <Typography
             sx={{
               fontSize: Theme.headings,
               fontWeight: 700,
               mt: 2,
               ml: { xs: 2, md: 1 }
-
             }}
           >
-            {item.cost}
+            {item.price}
           </Typography>
 
-          <Typography sx={{ mt: 1, ml: { xs: 2, md: 1 } }}>{item.text}</Typography>
+         
+
+          <Typography sx={{ mt: 1, ml: { xs: 2, md: 1 } }}>
+            {item.text}
+          </Typography>
+
+          
 
           <Typography
             sx={{
@@ -374,26 +365,32 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
                 mr: 1
               }}
             />
-            {item.discount}
+
+            {item.get}
           </Typography>
+
+     
 
           <Typography
             sx={{
-              color: "gray",
-              textDecoration: "line-through",
-              mt: 1,
+              mt: 3,
+              fontWeight: 700,
               ml: { xs: 2, md: 1 }
             }}
           >
-            {item.count}
-          </Typography>
-
-          <Typography sx={{ mt: 3, fontWeight: 700, ml: { xs: 2, md: 1 } }}>
             Secure checkout with:
           </Typography>
 
-          <Box sx={{ display: "flex", gap: 1, mt: 2, flexWrap: "wrap", ml: { xs: 2, md: 1 } }}>
-            {item.pay?.map((img, index) => (
+          <Box
+            sx={{
+              display: "flex",
+              gap: 1,
+              mt: 2,
+              flexWrap: "wrap",
+              ml: { xs: 2, md: 1 }
+            }}
+          >
+            {item["Secure-checkout"]?.map((img, index) => (
               <Box
                 key={index}
                 component="img"
@@ -408,79 +405,32 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
             ))}
           </Box>
 
+  
 
-          <Box sx={{ mt: 4, }}>
-            <Typography sx={{ fontWeight: 700, mb: 2, ml: { xs: 2, md: 1 } }}>
-              Select Variant
-            </Typography>
-
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: { xs: "column", sm: "row" },
-                gap: 2,
-                width: { xs: 300, sm: 600, md: 350, lg: 500 }
-
-              }}
-            >
-              <Box
-                sx={{
-
-                  borderRadius: 3,
-                  p: 1,
-                  flex: 1,
-                  border: 1,
-                  ml: { xs: 2, md: 1 },
-                }}
-              >
-                <Typography fontWeight={600}>200ml</Typography>
-                <Typography sx={{ mt: 1 }}>{item.cost}</Typography>
-                <Typography sx={{ mt: 1 }}>₹1.61/ml</Typography>
-              </Box>
-
-              <Box
-                sx={{
-
-                  borderRadius: 3,
-                  p: 2,
-                  flex: 1,
-                  border: 1,
-                  ml: { xs: 2, md: 1 },
-                }}
-              >
-                <Typography fontWeight={600}>Pack of 2</Typography>
-                <Typography sx={{ mt: 1 }}>
-                  ₹{(parseFloat(item.cost.replace(/[^0-9.]/g, "")) * 2).toFixed(2)}
-                </Typography>
-                <Typography sx={{ mt: 1 }}>₹1.61/ml</Typography>
-              </Box>
-            </Box>
-          </Box>
-
-
-          <Box sx={{ mt: "auto" }}>
+          <Box sx={{ mt: 4 }}>
             <Button
               fullWidth
               sx={{
                 color: Colors.black,
                 fontSize: Theme.font14Bold,
                 mt: 1,
-                background: isInCart(item) ? Colors.orange : Colors.yellow,
+                background: Colors.yellow,
                 gap: 1,
                 borderRadius: 10,
                 ml: 1,
                 mb: 3,
-                width: 200
+                width: 220
               }}
               onClick={() => handleCart(item)}
             >
               <ShoppingBagOutlinedIcon fontSize="small" />
-              {isInCart(item) ? "REMOVE FROM CART" : "ADD TO CART"}
+              ADD TO CART
             </Button>
-
           </Box>
         </Box>
       </Box>
+
+   
 
       <Snackbar
         open={snackOpen}
@@ -492,12 +442,13 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
           horizontal: "center"
         }}
       />
+
       <Box sx={{ mt: "auto", width: "100%" }}>
-        <Footer />
+        <div id="footer">
+  <Footer />
+</div>
       </Box>
-
     </Box>
-
   );
 }
 
