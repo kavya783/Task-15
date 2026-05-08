@@ -953,13 +953,14 @@ function ProfilePage() {
             <Box>
 
 
-              <Box sx={{ mt: 5, borderRadius: 2, boxShadow: 3, mb: 3, width: { sm: 400, md: "100%" } }}>
+              <Box sx={{ mt: 5, borderRadius: 2, boxShadow: 3, mb: 3, width: { sm: 400, md: "70%" } }}>
                 <Typography sx={{ fontSize: Theme.font20Bold, color: "gray", display: { xs: "none", sm: "block", md: "block" }, mt: 6, ml: { sm: 0, md: 0 }, textAlign: "center" }}>
                   My Address
                 </Typography>
-                <Button variant="outlined" sx={{ ml: { sm: 30, md: 60, lg: 110 }, mt: 3, mb: 3 }}>Add Address</Button>
-                <Typography sx={{ ml: { sm: 10, lg: 20 } }}>India</Typography>
-                <Button sx={{ ml: { sm: 5, lg: 20 }, mt: 5, color: Colors.black, background: Colors.yellow, mb: 3 }} variant="contained">Edit</Button>
+                <Button variant="outlined" sx={{ ml: { sm: 30, md: 60, lg: 80 }, mt: 3, mb: 3 }}>Add Address</Button>
+                <Typography sx={{ ml: { sm: 10, lg: 10 },color:Colors.gray,fontSize:Theme.font16Bold }}>Default</Typography>
+                <Typography sx={{ ml: { sm: 10, lg: 10 } }}>7-135/1,Market Street,Angara,Kaplieswarapuram Madalam-533307</Typography>
+                <Button sx={{ ml: { sm: 5, lg: 10 }, mt: 5, color: Colors.black, background: Colors.yellow, mb: 3 }} variant="contained">Edit</Button>
                 <Button variant="outlined" sx={{ ml: 5, mt: 5, color: Colors.black, mb: 3 }}>Delete</Button>
               </Box>
             </Box>
