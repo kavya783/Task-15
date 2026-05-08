@@ -10,9 +10,9 @@ import { ToastContainer } from "react-toastify";
 import ProfilePage from "./pages/ProfilePage";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ProductsDetailsPage from "./pages/ProductsDetailsPage";
-import { auth} from "./firebase"
+
 import { useEffect, useState } from "react";
-import {db} from "./firebase";
+
 
 
 
