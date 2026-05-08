@@ -86,13 +86,13 @@ const AppBarr = ({ cartItems, setCartItems }) => {
       ? data.find((item) => item.homepage)?.homepage || []
       : [];
 
-const allProducts = homepageData.flatMap(
-  (item) => item.data || []
-);
+  const allProducts = homepageData.flatMap(
+    (item) => item.data || []
+  );
 
-const filteredProducts = allProducts.filter((product) =>
-  product.name?.toLowerCase().includes(search.toLowerCase())
-);
+  const filteredProducts = allProducts.filter((product) =>
+    product.name?.toLowerCase().includes(search.toLowerCase())
+  );
   const removeFromCart = (indexToRemove) => {
     setCartItems((prev) => prev.filter((_, index) => index !== indexToRemove));
     setSnackOpen(true);
@@ -332,82 +332,82 @@ const filteredProducts = allProducts.filter((product) =>
 
               {search && (
                 <Box
-  sx={{
-    position: "absolute",
-    top: 45,
-    left: 0,
-    width: "100%",
-    background: "#fff",
-    borderRadius: 2,
-    boxShadow: 3,
-    zIndex: 999,
-    maxHeight: 350,
-    overflowY: "auto"
-  }}
->
-  {filteredProducts.length > 0 ? (
-    filteredProducts.map((item1, index) => (
-      <Box
-        key={index}
-        onClick={() => {
-          navigate("/productdetails", {
-            state: { item: item1 },
-          });
-          setSearch("");
-        }}
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          gap: 2,
-          p: 1.5,
-          cursor: "pointer",
-          borderBottom: "1px solid #eee",
-          "&:hover": {
-            background: "#f5f5f5"
-          }
-        }}
-      >
-        <Box
-          component="img"
-          src={item1.image}
-          sx={{
-            width: 55,
-            height: 55,
-            objectFit: "cover",
-            borderRadius: 2,
-            background: "#f5f5f5"
-          }}
-        />
+                  sx={{
+                    position: "absolute",
+                    top: 45,
+                    left: 0,
+                    width: "100%",
+                    background: "#fff",
+                    borderRadius: 2,
+                    boxShadow: 3,
+                    zIndex: 999,
+                    maxHeight: 350,
+                    overflowY: "auto"
+                  }}
+                >
+                  {filteredProducts.length > 0 ? (
+                    filteredProducts.map((item1, index) => (
+                      <Box
+                        key={index}
+                        onClick={() => {
+                          navigate("/productdetails", {
+                            state: { item: item1 },
+                          });
+                          setSearch("");
+                        }}
+                        sx={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: 2,
+                          p: 1.5,
+                          cursor: "pointer",
+                          borderBottom: "1px solid #eee",
+                          "&:hover": {
+                            background: "#f5f5f5"
+                          }
+                        }}
+                      >
+                        <Box
+                          component="img"
+                          src={item1.image}
+                          sx={{
+                            width: 55,
+                            height: 55,
+                            objectFit: "cover",
+                            borderRadius: 2,
+                            background: "#f5f5f5"
+                          }}
+                        />
 
-        <Box>
-          <Typography
-            sx={{
-              fontSize: "14px",
-              fontWeight: 600,
-              color: "#000"
-            }}
-          >
-            {item1.name}
-          </Typography>
+                        <Box>
+                          <Typography
+                            sx={{
+                              fontSize: "14px",
+                              fontWeight: 600,
+                              color: "#000"
+                            }}
+                          >
+                            {item1.name}
+                          </Typography>
 
-          <Typography
-            sx={{
-              fontSize: "13px",
-              color: "green",
-              mt: 0.5
-            }}
-          >
-            {item1.price}
-          </Typography>
-        </Box>
-      </Box>
-    ))
-  ) : (
-    <Typography sx={{ p: 2, color: "black" }}>
-      No Products Found
-    </Typography>
-  )}
-</Box>
+                          <Typography
+                            sx={{
+                              fontSize: "13px",
+                              color: "green",
+                              mt: 0.5
+                            }}
+                          >
+                            {item1.price}
+                          </Typography>
+                        </Box>
+                      </Box>
+                    ))
+                  ) : (
+                    <Typography sx={{ p: 2, color: "black" }}>
+                      No Products Found
+                    </Typography>
+                  )}
+                </Box>
               )}
             </Box>
             <Box sx={{ display: { xs: "none", md: "flex" }, alignItems: "center", gap: { xs: 2, md: 0, lg: 5 }, mr: { md: 5, lg: 1 } }}>
@@ -674,9 +674,9 @@ const filteredProducts = allProducts.filter((product) =>
                     </Box>
                   ))
                 ) : (
-                  <Typography sx={{ p: 2 }}>
-                    No Products Found
-                  </Typography>
+                <Typography sx={{ p: 2, color: "black" }}>
+                      No Products Found
+                    </Typography>
                 )}
               </Box>
             )}
