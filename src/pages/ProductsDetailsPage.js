@@ -175,7 +175,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
               display: { xs: "none", md: "flex" },
               flexDirection: "column",
               alignItems: "center",
-              ml: { md: 0, lg: 20 }
+              ml: { md: 5, lg: 20 }
             }}
           >
 

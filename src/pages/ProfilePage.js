@@ -920,7 +920,7 @@ function ProfilePage() {
                           />
                           <Typography sx={{ fontSize: Theme.font18Bold }}>{item1.name}</Typography>
                           <Typography sx={{ fontSize: Theme.font16Bold, color: Colors.gray }}>
-                            Order Total: ₹{order.total}
+                             Price: {item1.price}
                           </Typography>
 
 

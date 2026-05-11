@@ -326,10 +326,33 @@ const handleCart = (product) => {
                           lineHeight: 1.5,
                           minHeight: 30,
                           ml: 0,
-                          mb: 2
-
+                          mb: 2,
+                           display: { xs: "block",sm:"none", md: "block" },
                         }}
                       >{item1.heading}</Typography>
+                      <Tooltip title={item1.heading} arrow>
+                        <Typography
+                          sx={{
+                            color: Colors.black,
+                            fontSize: Theme.font10SemiBold,
+
+                            display: { xs: "none",sm:"block", md: "none" },
+
+                            overflow: "hidden",
+                            textOverflow: "ellipsis",
+
+                            WebkitLineClamp: 1,
+                            WebkitBoxOrient: "vertical",
+
+                            lineHeight: 1.4,
+                            minHeight: "38px",
+                            maxWidth: "170px",
+                            ml: 2
+                          }}
+                        >
+                          {item1.heading}
+                        </Typography>
+                      </Tooltip>
                       <Box>
                         <Box
                           sx={{
