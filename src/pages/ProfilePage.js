@@ -1283,18 +1283,8 @@ function ProfilePage() {
                   Innovist
                 </Typography>
 
-                <Typography
-                  sx={{
-                    textAlign: "center",
-                    color: Colors.gray,
-                    fontSize: Theme.font14SemiBold,
-                    mb: 4
-                  }}
-                >
-                  We'd love to hear from you 👋
-                </Typography>
-
-                {/* Full Name */}
+                
+             
                 <Typography
                   sx={{
                     mb: 1,
@@ -1321,7 +1311,7 @@ function ProfilePage() {
                   }}
                 />
 
-                {/* Email */}
+                
                 <Typography
                   sx={{
                     mb: 1,
@@ -1349,7 +1339,7 @@ function ProfilePage() {
                   }}
                 />
 
-                {/* Phone Number */}
+             
                 <Typography
                   sx={{
                     mb: 1,
@@ -1376,7 +1366,6 @@ function ProfilePage() {
                   }}
                 />
 
-                {/* Button */}
                 <Button
                   fullWidth
                   variant="contained"

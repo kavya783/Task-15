@@ -87,7 +87,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
           flex: 1
         }}
       >
-        {/* LEFT SIDE */}
+    
 
         <Box
           sx={{
@@ -106,6 +106,25 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
               mt: { xs: 3, sm: 5 }
             }}
           >
+             {item.static && (
+    <Typography
+      sx={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        backgroundColor: Colors.background,
+        color: Colors.brown,
+        px: 1.5,
+        py: 0.5,
+        fontSize: Theme.font12Bold,
+        borderRadius: 2,
+        zIndex: 20
+      }}
+    >
+      {item.static}
+    </Typography>
+  )}
+
             <Box
               component="img"
               src={images[value]}
@@ -144,6 +163,8 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
                   }}
                 />
               ))}
+              
+
             </Box>
           </Box>
 
@@ -157,6 +178,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
               ml: { md: 0, lg: 20 }
             }}
           >
+
             <IconButton onClick={() => swiperRef.current?.slidePrev()}>
               <KeyboardArrowUpIcon />
             </IconButton>
@@ -206,7 +228,27 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
               position: "relative",
               display: { xs: "none", md: "block" }
             }}
-          >
+          >  
+           {item.static && (
+    <Typography
+      sx={{
+        position: "absolute",
+        top: 0,
+        left: { md: 10, lg: 120 },
+        backgroundColor: Colors.background,
+        color: Colors.brown,
+        px: 0.5,
+        py: 0.1,
+        fontSize: Theme.font12Bold,
+        borderRadius: 2,
+        zIndex: 20
+      }}
+    >
+      {item.static}
+    </Typography>
+  )}
+
+           
             <Box
               component="img"
               src={images[value]}
@@ -248,7 +290,7 @@ function ProductsDetailsPage({ cartItems = [], setCartItems }) {
               >
                 <CloseIcon />
               </IconButton>
-
+                  
               <Box
                 component="img"
                 src={images[value]}
