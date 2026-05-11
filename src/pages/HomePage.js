@@ -1,24 +1,25 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getProductDataActionInitiate } from "../redux/actions/getProductAction";
 import Carousel from "react-material-ui-carousel";
 import { Box, Card, CardContent, Rating, Tooltip, Typography, Button } from "@mui/material";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
-
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import Colors from "../colors";
 import { Theme } from "../GlobalStyles";
 import PercentIcon from '@mui/icons-material/Percent';
 import Journal from "../components/Journal";
-// import { useRef } from "react";
+import { useRef } from "react";
 import { Snackbar } from "@mui/material";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 function HomePage({ cartItems, setCartItems }) {
   const [snackOpen, setSnackOpen] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   // const footerRef = useRef(null);
-  
+
   const { data = [], loading, error } = useSelector(
     (state) => state.getproductdata
   );
@@ -43,6 +44,21 @@ function HomePage({ cartItems, setCartItems }) {
 
     setSnackOpen(true);
   };
+ 
+const scrollRefs = useRef([]);
+ const scrollLeft = (index) => {
+  scrollRefs.current[index]?.scrollBy({
+    left: -300,
+    behavior: "smooth"
+  });
+};
+
+const scrollRight = (index) => {
+  scrollRefs.current[index]?.scrollBy({
+    left: 300,
+    behavior: "smooth"
+  });
+};
 
   useEffect(() => {
     dispatch(getProductDataActionInitiate());
@@ -134,6 +150,28 @@ function HomePage({ cartItems, setCartItems }) {
               {item.subheading}
             </Typography>
             <Box
+  sx={{
+    position: "relative",
+    display: "flex",
+    alignItems: "center"
+  }}
+>
+<ArrowBackIosIcon
+  onClick={() => scrollLeft(index)}
+  sx={{
+    cursor: "pointer",
+    position: "absolute",
+    left: 0,
+    zIndex: 20,
+    background: "white",
+    borderRadius: "50%",
+    p: 1,
+    boxShadow: 2
+  }}
+/>
+
+           <Box
+  ref={(el) => (scrollRefs.current[index] = el)}
               sx={{
                 display: "flex",
                 gap: 2,
@@ -148,8 +186,9 @@ function HomePage({ cartItems, setCartItems }) {
                 }
               }}
             >
-
+             
               {item.data?.map((item1, index1) => (
+
                 <Card
                   sx={{
                     position: "relative",
@@ -193,7 +232,7 @@ function HomePage({ cartItems, setCartItems }) {
                         py: 0.4,
                         fontSize: Theme.font12Bold,
                         borderRadius: 1,
-                       zIndex: 10,
+                        zIndex: 10,
                         borderTopLeftRadius: 4,
                         borderTopRightRadius: 1,
                         borderBottomRightRadius: 8
@@ -290,7 +329,7 @@ function HomePage({ cartItems, setCartItems }) {
                           alignItems: "center",
                           gap: 1,
                           ml: 1,
-                           mt: "auto",
+                          mt: "auto",
                         }}
                       >
                         <Typography sx={{ fontSize: Theme.font14Bold }}>
@@ -324,11 +363,11 @@ function HomePage({ cartItems, setCartItems }) {
                         sx={{
                           color: Colors.black,
                           fontSize: Theme.font14Bold,
-                          
+
                           background: Colors.yellow,
                           borderRadius: 10,
                           mb: 1,
-                           mt: "auto",
+                          mt: "auto",
                         }}
                         onClick={() => handleCart(item1)}
                       >
@@ -338,10 +377,25 @@ function HomePage({ cartItems, setCartItems }) {
                     </Box>
                   </CardContent>
                 </Card>
+
               ))}
+             
 
             </Box>
-
+<ArrowForwardIosIcon
+  onClick={() => scrollRight(index)}
+  sx={{
+    cursor: "pointer",
+    position: "absolute",
+    right: 0,
+    zIndex: 20,
+    background: "white",
+    borderRadius: "50%",
+    p: 1,
+    boxShadow: 2
+  }}
+/>
+</Box>
           </Box>
         ))}
         <Box sx={{ ml: 0 }}>
@@ -350,19 +404,19 @@ function HomePage({ cartItems, setCartItems }) {
 
       </Box>
       <div id="footer">
-  <Footer />
-</div>
+        <Footer />
+      </div>
 
-<Snackbar
-  open={snackOpen}
-  autoHideDuration={2000}
-  onClose={() => setSnackOpen(false)}
-  message="Product added to cart"
-  anchorOrigin={{
-    vertical: "top",
-    horizontal: "center"
-  }}
-/>
+      <Snackbar
+        open={snackOpen}
+        autoHideDuration={2000}
+        onClose={() => setSnackOpen(false)}
+        message="Product added to cart"
+        anchorOrigin={{
+          vertical: "top",
+          horizontal: "center"
+        }}
+      />
     </Box>
 
   )
