@@ -44,7 +44,7 @@ function HomePage({ cartItems, setCartItems }) {
 
     setSnackOpen(true);
   };
- 
+  // const scrollRef = useRef(null);
 const scrollRefs = useRef([]);
  const scrollLeft = (index) => {
   scrollRefs.current[index]?.scrollBy({

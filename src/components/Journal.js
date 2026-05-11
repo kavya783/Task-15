@@ -62,6 +62,7 @@ function Journal() {
             }}>
               {item.subheading}
             </Typography>
+            
               <Box
               sx={{
                 display: "flex",

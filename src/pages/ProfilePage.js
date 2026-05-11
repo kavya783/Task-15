@@ -13,7 +13,7 @@ import {
   TextField,
 
 } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Colors from "../colors";
 import { Theme } from "../GlobalStyles";
 // import { GoogleAuthProvider,} from "firebase/auth";
@@ -162,15 +162,10 @@ function ProfilePage() {
 
     setTimeout(() => setCopied(false), 2000);
   };
+  //  const [tabValue, setTabValue] = useState(0);
+
   const handleTabChange = (event, newValue) => {
     setTabValue(newValue);
-
-    if (newValue === 0) handleOrders();
-    if (newValue === 1) handleIcash();
-    if (newValue === 2) handleReferrals();
-    if (newValue === 3) handleAddress();
-    if (newValue === 4) handleChat();
-
   };
   useEffect(() => {
     handleOrders();
@@ -243,13 +238,9 @@ function ProfilePage() {
           </Box>
           <Box
             sx={{
-              width: "310px",
-              // background: "#f2f2f2",
-              // borderRight: "1px solid #ddd",
+              width: "100%",
               p: 1,
-              minHeight: "100%",
-              display: { xs: "block", sm: "none" },
-
+              display: { xs: "block", sm: "none" }
             }}
           >
 
@@ -259,12 +250,20 @@ function ProfilePage() {
               onChange={handleTabChange}
               variant="scrollable"
               scrollButtons="auto"
+              allowScrollButtonsMobile
               sx={{
+                mb: 3,
                 "& .MuiTabs-indicator": {
-                  backgroundColor: "black"
+                  backgroundColor: Colors.black
+                },
+                "& .MuiTab-root": {
+                  color: Colors.gray,
+                  textTransform: "none",
+                  minWidth: 80,
+                  fontSize: Theme.font12SemiBold
                 },
                 "& .Mui-selected": {
-                  color: "black",
+                  color: Colors.black,
                   fontWeight: "bold"
                 }
               }}
@@ -278,27 +277,8 @@ function ProfilePage() {
             </Tabs>
           </Box>
 
-          <Box
-            sx={{
-              flex: 1,
-              p: 4,
-              display: { xs: "block", sm: "none" },
-
-
-            }}
-          >
-            <Box
-              sx={{
-                flex: 1,
-                p: 4,
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "flex-start"
-              }}
-            ></Box>
-
-
-            {showOrders && (
+          <Box sx={{ display: { xs: "block", sm: "none" } }}>
+            {tabValue === 0 && (
               <>
                 {orders.length > 0 ? (
                   orders.map((order, index) => (
@@ -348,7 +328,7 @@ function ProfilePage() {
             )}
 
 
-            {showIcash && (
+            {tabValue === 1 && (
               <Box>
 
 
@@ -428,7 +408,7 @@ function ProfilePage() {
             )}
 
 
-            {showReferrals && (
+            {tabValue === 2 && (
               <Box>
 
 
@@ -506,111 +486,302 @@ function ProfilePage() {
                 </Box>
               </Box>
             )}
-            {showAddress && (
-              <Box>
+            {tabValue === 3 && (
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  mt: 4
+                }}
+              >
+                <Box
+                  sx={{
+                    width: { xs: "100%", sm: 450, md: "70%" },
+                    background: Colors.white,
+                    borderRadius: 4,
+                    boxShadow: 3,
+                    p: 3,
+                    border: `1px solid ${Colors.border}`
+                  }}
+                >
+
+                  <Box
+                    sx={{
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                      mb: 3,
+                      flexWrap: "wrap",
+                      gap: 2
+                    }}
+                  >
+                    <Typography
+                      sx={{
+                        fontSize: Theme.font20Bold,
+                        color: Colors.black
+                      }}
+                    >
+                      My Address
+                    </Typography>
+
+                    <Button
+                      variant="contained"
+                      sx={{
+                        background: Colors.yellow,
+                        color: Colors.black,
+                        borderRadius: 3,
+                        textTransform: "none",
+                        fontWeight: 600,
+                        boxShadow: "none"
+                      }}
+                    >
+                      Add Address
+                    </Button>
+                  </Box>
 
 
-                <Box sx={{ mt: 5, borderRadius: 2, boxShadow: 3, mb: 3, width: "100%" }}>
+                  <Box
+                    sx={{
+                      background: "#fafafa",
+                      borderRadius: 3,
+                      p: 3,
+                      border: `1px solid ${Colors.border}`
+                    }}
+                  >
 
-                  <Typography sx={{ fontSize: Theme.font20Bold, color: "gray", display: { xs: "block", sm: "none", md: "none" }, mt: 4, textAlign: "center", }}>
-                    My Address
-                  </Typography>
-                  <Link sx={{ ml: 5, mb: 3, mt: 2 }} size="small">Add Address</Link>
-                  <Typography sx={{ ml: 2, textAlign: "center", }}>India</Typography>
-                  <Button sx={{ ml: 2, mt: 5, color: Colors.black, background: Colors.yellow, mb: 3 }} variant="contained">Edit</Button>
-                  <Button variant="outlined" sx={{ ml: 2, mt: 5, color: Colors.black, mb: 3 }}>Delete</Button>
+                    <Typography
+                      sx={{
+                        display: "inline-block",
+                        background: Colors.yellow,
+                        color: Colors.black,
+                        px: 2,
+                        py: 0.5,
+                        borderRadius: 5,
+                        fontSize: Theme.font12Bold,
+                        mb: 2
+                      }}
+                    >
+                      Default
+                    </Typography>
 
+                    <Typography
+                      sx={{
+                        fontSize: Theme.font16Bold,
+                        color: Colors.black,
+                        lineHeight: 1.8
+                      }}
+                    >
+                      7-135/1, Market Street,
+                      <br />
+                      Angara, Kapileswarapuram Mandalam,
+                      <br />
+                      533307
+                    </Typography>
+
+
+                    <Box
+                      sx={{
+                        display: "flex",
+                        gap: 2,
+                        mt: 3,
+                        flexWrap: "wrap"
+                      }}
+                    >
+                      <Button
+                        variant="contained"
+                        sx={{
+                          background: Colors.yellow,
+                          color: Colors.black,
+                          borderRadius: 3,
+                          textTransform: "none",
+                          px: 4,
+                          boxShadow: "none"
+                        }}
+                      >
+                        Edit
+                      </Button>
+
+                      <Button
+                        variant="outlined"
+                        sx={{
+                          borderRadius: 3,
+                          textTransform: "none",
+                          px: 4,
+                          color: Colors.black,
+                          borderColor: Colors.gray
+                        }}
+                      >
+                        Delete
+                      </Button>
+                    </Box>
+                  </Box>
                 </Box>
-
               </Box>
-
             )}
-             {showChat && (
-            <Box>
-
-
-              <Box sx={{ mt: 1, borderRadius: 2, boxShadow: 3, mb: 3, width: { sm:"100%", md: "30%" }, ml: 0 }}>
-                <Typography sx={{ fontSize: Theme.font20Bold, color: Colors.black, display: { xs: "block", sm: "none", md: "none" }, mt: 6, ml: { sm: 0, md: 0 }, textAlign: "center" }}>
-                  Innovist
-                </Typography>
-                <Box sx={{ ml: 3 }}>
-                  <label >Full Name</label>
-                </Box>
-                <TextField
-
-                  label="Full Name"
-                  name="Full name"
-                  type="name"
-
-                  size="medium"
-                  margin="dense"
-
+            {tabValue === 4 && (
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  mt: 4,
+                  mb: 4
+                }}
+              >
+                <Box
                   sx={{
-                    input: { color: Colors.black },
-                    label: { color: Colors.gray },
-                    ml: 3,
-                    mr: 5
+                    width: { xs: "100%", sm: 420, md: 450 },
+                    background: Colors.white,
+                    borderRadius: 4,
+                    boxShadow: 4,
+                    p: 4,
+                    border: `1px solid ${Colors.border}`
+                  }}
+                >
+                  {/* Heading */}
+                  <Typography
+                    sx={{
+                      fontSize: Theme.font24Bold,
+                      color: Colors.black,
+                      textAlign: "center",
+                      mb: 1
+                    }}
+                  >
+                    Innovist
+                  </Typography>
 
-                  }
-                  }
-                />
-                <Box sx={{ ml: 3 }}>
-                  <label >Email</label>
-                </Box>
-                <TextField
-                  label="Email"
-                  name="Email"
-                  type="Email"
-
-                  size="medium"
-                  margin="dense"
-
+                  {/* <Typography
                   sx={{
-                    input: { color: Colors.white },
-                    label: { color: Colors.gray },
-                    ml: 3,
-                    mr: 5
+                    textAlign: "center",
+                    color: Colors.gray,
+                    fontSize: Theme.font14SemiBold,
+                    mb: 4
+                  }}
+                >
+                  We'd love to hear from you 
+                </Typography> */}
 
-                  }
-                  }
-                />
-                <Box sx={{ ml: 3 }}>
-                  <label >Phone Number</label>
+
+                  <Typography
+                    sx={{
+                      mb: 1,
+                      color: Colors.black,
+                      fontSize: Theme.font14Bold
+                    }}
+                  >
+                    Full Name
+                  </Typography>
+
+                  <TextField
+                    fullWidth
+                    placeholder="Enter your full name"
+                    variant="outlined"
+                    margin="dense"
+                    sx={{
+                      mb: 3,
+                      input: {
+                        color: Colors.black
+                      },
+                      "& .MuiOutlinedInput-root": {
+                        borderRadius: 3
+                      }
+                    }}
+                  />
+
+
+                  <Typography
+                    sx={{
+                      mb: 1,
+                      color: Colors.black,
+                      fontSize: Theme.font14Bold
+                    }}
+                  >
+                    Email
+                  </Typography>
+
+                  <TextField
+                    fullWidth
+                    placeholder="Enter your email"
+                    type="email"
+                    variant="outlined"
+                    margin="dense"
+                    sx={{
+                      mb: 3,
+                      input: {
+                        color: Colors.black
+                      },
+                      "& .MuiOutlinedInput-root": {
+                        borderRadius: 3
+                      }
+                    }}
+                  />
+
+
+                  <Typography
+                    sx={{
+                      mb: 1,
+                      color: Colors.black,
+                      fontSize: Theme.font14Bold
+                    }}
+                  >
+                    Phone Number
+                  </Typography>
+
+                  <TextField
+                    fullWidth
+                    placeholder="Enter your phone number"
+                    variant="outlined"
+                    margin="dense"
+                    sx={{
+                      mb: 4,
+                      input: {
+                        color: Colors.black
+                      },
+                      "& .MuiOutlinedInput-root": {
+                        borderRadius: 3
+                      }
+                    }}
+                  />
+
+
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    sx={{
+                      background: Colors.yellow,
+                      color: Colors.black,
+                      borderRadius: 3,
+                      py: 1.5,
+                      fontSize: Theme.font16Bold,
+                      textTransform: "none",
+                      boxShadow: "none",
+                      "&:hover": {
+                        background: Colors.yellow
+                      }
+                    }}
+                  >
+                    Let's Chat
+                  </Button>
                 </Box>
-                <TextField
-                  label="Phone Number"
-                  name="Phone Number"
-                  type="Phone Number"
-
-                  size="medium"
-                  margin="dense"
-
-                  sx={{
-                    input: { color: Colors.black },
-                    label: { color: Colors.gray },
-                    ml: 3,
-                    mr: 5,
-                    mb: 5
-
-                  }
-                  }
-                />
-                <Button variant="contained" sx={{ml:5,background:Colors.black,color:Colors.white,mb:4}}>Let's Chat</Button>
-
 
               </Box>
-            </Box>
-          )}
-
-
-
-
-
-
-
-
+            )}
           </Box>
-          <Box sx={{ flexDirection: "row", }}>
+
+
+
+
+
+
+
+
+
+          <Box
+            sx={{
+              display: { xs: "none", sm: "flex" },
+              flexDirection: "column",
+              mt: 3
+            }}
+          >
 
 
             <Box sx={{ display: { xs: "none", sm: "block" }, }}>
@@ -793,8 +964,8 @@ function ProfilePage() {
                   0 ICash
                 </Typography>
 
-                <Typography sx={{ mt: 2, fontSize: Theme.font14SemiBold, color: "gray" }}>
-                  ICash expire in 6 months from the date they were rewarded
+                <Typography sx={{ mt: 2, fontSize: Theme.font14SemiBold, color: "gray",ml:0 }}>
+                  ICash expire in 6 months from the date they were reward
                 </Typography>
 
                 <Typography sx={{ fontSize: Theme.font14SemiBold, color: "gray" }}>
@@ -863,10 +1034,10 @@ function ProfilePage() {
 
 
               <Box sx={{ textAlign: "center", mt: 5 }}>
-                <Typography sx={{ fontSize: Theme.font20Bold, color: "gray", display: { xs: "none", sm: "none", md: "block" } }}>
+                <Typography sx={{ fontSize: Theme.font18Bold, color: "gray", display: { xs: "none", sm: "none", md: "block" } }}>
                   Share this link with a friend so they can claim the 100 ICash reward.
                 </Typography>
-                <Typography sx={{ fontSize: Theme.font14SemiBold, color: "gray", display: { xs: "none", sm: "block", md: "none" } }}>
+                <Typography sx={{ fontSize: Theme.font12SemiBold, color: "gray", display: { xs: "none", sm: "block", md: "none" } }}>
                   Share this link with a friend so they can claim the 100 ICash reward.
                 </Typography>
               </Box>
@@ -898,7 +1069,7 @@ function ProfilePage() {
                 Copy or share your referral link with your friends to get 100 ICash once their order is delivered!
               </Typography>
               <Typography sx={{ fontSize: Theme.font10SemiBold, color: Colors.gray, textAlign: "center", mt: 3, display: { xs: "none", sm: "block", md: "none" } }}>
-                Copy or share your referral link with your friends to get 100 ICash once their order is delivered!
+                Copy or share your referral link with your friends to get 100 ICash.
               </Typography>
               <Box sx={{ textAlign: "center", mt: 4 }}>
 
@@ -950,94 +1121,280 @@ function ProfilePage() {
             </Box>
           )}
           {showAddress && (
-            <Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                mt: 4
+              }}
+            >
+              <Box
+                sx={{
+                  width: { xs: "100%", sm: 450, md: "70%" },
+                  background: Colors.white,
+                  borderRadius: 4,
+                  boxShadow: 3,
+                  p: 3,
+                  border: `1px solid ${Colors.border}`
+                }}
+              >
+
+                <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    mb: 3,
+                    flexWrap: "wrap",
+                    gap: 2
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: Theme.font20Bold,
+                      color: Colors.black
+                    }}
+                  >
+                    My Address
+                  </Typography>
+
+                  <Button
+                    variant="contained"
+                    sx={{
+                      background: Colors.yellow,
+                      color: Colors.black,
+                      borderRadius: 3,
+                      textTransform: "none",
+                      fontWeight: 600,
+                      boxShadow: "none"
+                    }}
+                  >
+                    Add Address
+                  </Button>
+                </Box>
 
 
-              <Box sx={{ mt: 5, borderRadius: 2, boxShadow: 3, mb: 3, width: { sm: 400, md: "70%" } }}>
-                <Typography sx={{ fontSize: Theme.font20Bold, color: "gray", display: { xs: "none", sm: "block", md: "block" }, mt: 6, ml: { sm: 0, md: 0 }, textAlign: "center" }}>
-                  My Address
-                </Typography>
-                <Button variant="outlined" sx={{ ml: { sm: 30, md: 60, lg: 80 }, mt: 3, mb: 3 }}>Add Address</Button>
-                <Typography sx={{ ml: { sm: 10, lg: 10 },color:Colors.gray,fontSize:Theme.font16Bold }}>Default</Typography>
-                <Typography sx={{ ml: { sm: 10, lg: 10 } }}>7-135/1,Market Street,Angara,Kaplieswarapuram Madalam-533307</Typography>
-                <Button sx={{ ml: { sm: 5, lg: 10 }, mt: 5, color: Colors.black, background: Colors.yellow, mb: 3 }} variant="contained">Edit</Button>
-                <Button variant="outlined" sx={{ ml: 5, mt: 5, color: Colors.black, mb: 3 }}>Delete</Button>
+                <Box
+                  sx={{
+                    background: "#fafafa",
+                    borderRadius: 3,
+                    p: 3,
+                    border: `1px solid ${Colors.border}`
+                  }}
+                >
+
+                  <Typography
+                    sx={{
+                      display: "inline-block",
+                      background: Colors.yellow,
+                      color: Colors.black,
+                      px: 2,
+                      py: 0.5,
+                      borderRadius: 5,
+                      fontSize: Theme.font12Bold,
+                      mb: 2
+                    }}
+                  >
+                    Default
+                  </Typography>
+
+                  <Typography
+                    sx={{
+                      fontSize: Theme.font16Bold,
+                      color: Colors.black,
+                      lineHeight: 1.8
+                    }}
+                  >
+                    7-135/1, Market Street,
+                    <br />
+                    Angara, Kapileswarapuram Mandalam,
+                    <br />
+                    533307
+                  </Typography>
+
+
+                  <Box
+                    sx={{
+                      display: "flex",
+                      gap: 2,
+                      mt: 3,
+                      flexWrap: "wrap"
+                    }}
+                  >
+                    <Button
+                      variant="contained"
+                      sx={{
+                        background: Colors.yellow,
+                        color: Colors.black,
+                        borderRadius: 3,
+                        textTransform: "none",
+                        px: 4,
+                        boxShadow: "none"
+                      }}
+                    >
+                      Edit
+                    </Button>
+
+                    <Button
+                      variant="outlined"
+                      sx={{
+                        borderRadius: 3,
+                        textTransform: "none",
+                        px: 4,
+                        color: Colors.black,
+                        borderColor: Colors.gray
+                      }}
+                    >
+                      Delete
+                    </Button>
+                  </Box>
+                </Box>
               </Box>
             </Box>
           )}
           {showChat && (
-            <Box>
-
-
-              <Box sx={{ mt: 1, borderRadius: 2, boxShadow: 3, mb: 3, width: { sm: 400, md: "50%",lg:"30%" }, ml:{sm:5,md:10,lg:20} }}>
-                <Typography sx={{ fontSize: Theme.font20Bold, color: Colors.black, display: { xs: "none", sm: "block", md: "block" }, mt: 6, ml: { sm: 0, md: 0 }, textAlign: "center" }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                mt: 4,
+                mb: 4
+              }}
+            >
+              <Box
+                sx={{
+                  width: { xs: "100%", sm: 420, md: 450 },
+                  background: Colors.white,
+                  borderRadius: 4,
+                  boxShadow: 4,
+                  p: 4,
+                  border: `1px solid ${Colors.border}`
+                }}
+              >
+                {/* Heading */}
+                <Typography
+                  sx={{
+                    fontSize: Theme.font24Bold,
+                    color: Colors.black,
+                    textAlign: "center",
+                    mb: 1
+                  }}
+                >
                   Innovist
                 </Typography>
-                <Box sx={{ ml: 3 }}>
-                  <label >Full Name</label>
-                </Box>
-                <TextField
 
-                  label="Full Name"
-                  name="Full name"
-                  type="name"
-
-                  size="medium"
-                  margin="dense"
-
+                <Typography
                   sx={{
-                    input: { color: Colors.black },
-                    label: { color: Colors.gray },
-                    ml: 3,
-                    mr: 5
+                    textAlign: "center",
+                    color: Colors.gray,
+                    fontSize: Theme.font14SemiBold,
+                    mb: 4
+                  }}
+                >
+                  We'd love to hear from you 👋
+                </Typography>
 
-                  }
-                  }
-                />
-                <Box sx={{ ml: 3 }}>
-                  <label >Email</label>
-                </Box>
-                <TextField
-                  label="Email"
-                  name="Email"
-                  type="Email"
-
-                  size="medium"
-                  margin="dense"
-
+                {/* Full Name */}
+                <Typography
                   sx={{
-                    input: { color: Colors.white },
-                    label: { color: Colors.gray },
-                    ml: 3,
-                    mr: 5
+                    mb: 1,
+                    color: Colors.black,
+                    fontSize: Theme.font14Bold
+                  }}
+                >
+                  Full Name
+                </Typography>
 
-                  }
-                  }
-                />
-                <Box sx={{ ml: 3 }}>
-                  <label >Phone Number</label>
-                </Box>
                 <TextField
-                  label="Phone Number"
-                  name="Phone Number"
-                  type="Phone Number"
-
-                  size="medium"
+                  fullWidth
+                  placeholder="Enter your full name"
+                  variant="outlined"
                   margin="dense"
-
                   sx={{
-                    input: { color: Colors.black },
-                    label: { color: Colors.gray },
-                    ml: 3,
-                    mr: 5,
-                    mb: 5
-
-                  }
-                  }
+                    mb: 3,
+                    input: {
+                      color: Colors.black
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      borderRadius: 3
+                    }
+                  }}
                 />
-                <Button variant="contained" sx={{ml:5,background:Colors.black,color:Colors.white,mb:4}}>Let's Chat</Button>
 
+                {/* Email */}
+                <Typography
+                  sx={{
+                    mb: 1,
+                    color: Colors.black,
+                    fontSize: Theme.font14Bold
+                  }}
+                >
+                  Email
+                </Typography>
 
+                <TextField
+                  fullWidth
+                  placeholder="Enter your email"
+                  type="email"
+                  variant="outlined"
+                  margin="dense"
+                  sx={{
+                    mb: 3,
+                    input: {
+                      color: Colors.black
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      borderRadius: 3
+                    }
+                  }}
+                />
+
+                {/* Phone Number */}
+                <Typography
+                  sx={{
+                    mb: 1,
+                    color: Colors.black,
+                    fontSize: Theme.font14Bold
+                  }}
+                >
+                  Phone Number
+                </Typography>
+
+                <TextField
+                  fullWidth
+                  placeholder="Enter your phone number"
+                  variant="outlined"
+                  margin="dense"
+                  sx={{
+                    mb: 4,
+                    input: {
+                      color: Colors.black
+                    },
+                    "& .MuiOutlinedInput-root": {
+                      borderRadius: 3
+                    }
+                  }}
+                />
+
+                {/* Button */}
+                <Button
+                  fullWidth
+                  variant="contained"
+                  sx={{
+                    background: Colors.yellow,
+                    color: Colors.black,
+                    borderRadius: 3,
+                    py: 1.5,
+                    fontSize: Theme.font16Bold,
+                    textTransform: "none",
+                    boxShadow: "none",
+                    "&:hover": {
+                      background: Colors.yellow
+                    }
+                  }}
+                >
+                  Let's Chat
+                </Button>
               </Box>
             </Box>
           )}
@@ -1046,9 +1403,9 @@ function ProfilePage() {
 
 
       <Box sx={{ mt: { xs: "auto", sm: "auto" } }}>
-         <div id="footer">
-  <Footer />
-</div>
+        <div id="footer">
+          <Footer />
+        </div>
       </Box>
       <Snackbar
         open={snackOpen}
