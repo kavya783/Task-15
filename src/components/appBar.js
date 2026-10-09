@@ -168,51 +168,51 @@ const AppBarr = ({ cartItems, setCartItems }) => {
     return () => unsubscribe();
   }, []);
 
-  // const handlePayment = () => {
-  //   const currentUser = auth.currentUser;
+  const handlePayment = () => {
+    const currentUser = auth.currentUser;
 
-  //   if (!currentUser) {
-  //     toast.error("User not logged in");
-  //     navigate("/login");
-  //     return;
-  //   }
-  //   const amount = Math.round((estimatedTotal || 0) * 100);
-  //   console.log(amount);
-  //   if (!window.Razorpay) {
-  //     alert("Razorpay script not loaded");
-  //     return;
-  //   }
+    if (!currentUser) {
+      toast.error("User not logged in");
+      navigate("/login");
+      return;
+    }
+    const amount = Math.round((estimatedTotal || 0) * 100);
+    console.log(amount);
+    if (!window.Razorpay) {
+      alert("Razorpay script not loaded");
+      return;
+    }
 
-  //   const options = {
-  //     key: "rzp_test_SlYhoGItP2cIc0",
-  //     amount,
-  //     currency: "INR",
-  //     handler: async function (response) {
-  //       const orderRef = ref(db, "orders/" + currentUser.uid);
+    const options = {
+      key: "rzp_test_SlYhoGItP2cIc0",
+      amount,
+      currency: "INR",
+      handler: async function (response) {
+        const orderRef = ref(db, "orders/" + currentUser.uid);
 
-  //       await push(orderRef, {
-  //         items: cartItems,
-  //         total: estimatedTotal,
-  //         paymentId: response.razorpay_payment_id,
-  //         createdAt: new Date().toISOString(),
-  //       });
+        await push(orderRef, {
+          items: cartItems,
+          total: estimatedTotal,
+          paymentId: response.razorpay_payment_id,
+          createdAt: new Date().toISOString(),
+        });
 
-  //       setCartItems([]);
-  //       setOpen(false);
-  //       toast.success("Payment Successful");
-  //       navigate("/profilepage");
-  //     },
-  //     prefill: {
-  //       name: currentUser.displayName || "User",
-  //       email: currentUser.email,
-  //       contact: "9999999999",
-  //     },
-  //     theme: { color: "#000" },
-  //   };
+        setCartItems([]);
+        setOpen(false);
+        toast.success("Payment Successful");
+        navigate("/profilepage");
+      },
+      prefill: {
+        name: currentUser.displayName || "User",
+        email: currentUser.email,
+        contact: "9999999999",
+      },
+      theme: { color: "#000" },
+    };
 
-  //   const razor = new window.Razorpay(options);
-  //   razor.open();
-  // };
+    const razor = new window.Razorpay(options);
+    razor.open();
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -573,9 +573,7 @@ const AppBarr = ({ cartItems, setCartItems }) => {
                         fontWeight: "bold",
                         cursor: "pointer"
                       }}
-                      onClick={
-                        toast.Success("payment successfully")
-                      }
+                      onClick={handlePayment}
 
                     >
                       Buy Now
